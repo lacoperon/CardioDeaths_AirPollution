@@ -21,4 +21,5 @@ Support (likes, retweets) correlates with mentions
 https://github.com/bpb27/twitter_scraping
 
 
-(Maybe do @FoxNews, @WashPost, etc…)
+(Maybe do @FoxNews, @WashPost, etc…, as well as RTNews, ChinaDaily, ABC Australia, BBC, for example)
+-- compare to realdonaldtrump --
