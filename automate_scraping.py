@@ -2,9 +2,12 @@ import scrape as scrape
 import metadata as meta
 import os
 import datetime
+import sys
 
 # edit these three variables
 user = 'nytimes' # Twitter account to scrape
+if len(sys.argv) > 1:
+    user = sys.argv[1].lower()
 years = [2006 + x for x in range(13)] # years to scrape
 
 def getTwoMonthIntervals(year):
@@ -35,7 +38,7 @@ if __name__ == "__main__":
                 start, end = interval
                 scrape.run(user, start, end)
                 meta.run(user, "{}_{}".format(i, year))
-                os.remove('./all_ids.json')
+                os.remove('./{}_all_ids.json'.format(user))
             else:
                 print(user+"_{}_{}.csv already exists".format(i, year))
             i += 1

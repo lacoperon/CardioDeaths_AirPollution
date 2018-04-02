@@ -7,7 +7,7 @@ It is only slightly modified
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
+from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException, NoSuchWindowException
 from time import sleep
 import json
 import datetime
@@ -26,13 +26,27 @@ def form_url(user, since, until):
 def increment_day(date, i):
     return date + datetime.timedelta(days=i)
 
+def getURL(driver, url, num_errors=0):
+    try:
+        driver.get(url)
+    except NoSuchWindowException as e:
+        if num_errors > 10:
+            print("There were 10 NoSuchWindowExceptions for one page...")
+            raise e
+        num_errors += 1
+        driver = webdriver.Chrome()
+        getURL(driver, url, num_errors)
+        # Creates a new driver, because the connection to this one has beene lost
+
+        driver.get(url)
+
 def run(user, start, end):
     # only edit these if you're having problems
     delay = 0.7  # time to wait on each page load before reading the page
     driver = webdriver.Chrome()  # options are Chrome() Firefox() Safari()
 
     # don't mess with this stuff
-    twitter_ids_filename = 'all_ids.json'
+    twitter_ids_filename = '{}_all_ids.json'.format(user)
     days = (end - start).days + 1
     id_selector = '.time a.tweet-timestamp'
     tweet_selector = 'li.js-stream-item'
@@ -45,14 +59,7 @@ def run(user, start, end):
         url = form_url(user, d1, d2)
         print(url)
         print(d1)
-        try:
-            driver.get(url)
-        except:
-            driver.close()
-            driver = webdriver.Chrome()
-            driver.get(url)
-            print("HIT EXCEPTION -- if something happens wrong now you know why")
-
+        getURL(driver, url)
         sleep(delay)
 
         try:

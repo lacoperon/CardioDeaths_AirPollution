@@ -38,7 +38,7 @@ def run(user, append_string):
     output_file_short = './data/{}_{}_short.json'.format(user, append_string)
     compression = zipfile.ZIP_DEFLATED
 
-    with open('./all_ids.json') as f:
+    with open('./{}_all_ids.json'.format(user)) as f:
         ids = json.load(f, strict=False)
 
     print('total ids: {}'.format(len(ids)))
