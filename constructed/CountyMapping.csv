@@ -1,0 +1,401 @@
+STATE CODE,PUMA ID,ASSOCIATED CITY,State
+36,03701,New York,New York
+36,03702,New York,New York
+36,03703,New York,New York
+36,03704,New York,New York
+36,03705,New York,New York
+36,03706,New York,New York
+36,03707,New York,New York
+36,03708,New York,New York
+36,03709,New York,New York
+36,03710,New York,New York
+36,03801,New York,New York
+36,03802,New York,New York
+36,03803,New York,New York
+36,03804,New York,New York
+36,03805,New York,New York
+36,03806,New York,New York
+36,03807,New York,New York
+36,03808,New York,New York
+36,03809,New York,New York
+36,03810,New York,New York
+36,03901,New York,New York
+36,03902,New York,New York
+36,03903,New York,New York
+36,04001,New York,New York
+36,04002,New York,New York
+36,04003,New York,New York
+36,04004,New York,New York
+36,04005,New York,New York
+36,04006,New York,New York
+36,04007,New York,New York
+36,04008,New York,New York
+36,04009,New York,New York
+36,04010,New York,New York
+36,04011,New York,New York
+36,04012,New York,New York
+36,04013,New York,New York
+36,04014,New York,New York
+36,04015,New York,New York
+36,04016,New York,New York
+36,04017,New York,New York
+36,04018,New York,New York
+36,04101,New York,New York
+36,04102,New York,New York
+36,04103,New York,New York
+36,04104,New York,New York
+36,04105,New York,New York
+36,04106,New York,New York
+36,04107,New York,New York
+36,04108,New York,New York
+36,04109,New York,New York
+36,04110,New York,New York
+36,04111,New York,New York
+36,04112,New York,New York
+36,04113,New York,New York
+36,04114,New York,New York
+06,03701,Los Angeles,California
+06,03702,Los Angeles,California
+06,03703,Los Angeles,California
+06,03704,Los Angeles,California
+06,03705,Los Angeles,California
+06,03706,Los Angeles,California
+06,03707,Los Angeles,California
+06,03708,Los Angeles,California
+06,03709,Los Angeles,California
+06,03710,Los Angeles,California
+06,03711,Los Angeles,California
+06,03712,Los Angeles,California
+06,03713,Los Angeles,California
+06,03714,Los Angeles,California
+06,03715,Los Angeles,California
+06,03716,Los Angeles,California
+06,03717,Los Angeles,California
+06,03718,Los Angeles,California
+06,03719,Los Angeles,California
+06,03720,Los Angeles,California
+06,03721,Los Angeles,California
+06,03722,Los Angeles,California
+06,03723,Los Angeles,California
+06,03724,Los Angeles,California
+06,03725,Los Angeles,California
+06,03726,Los Angeles,California
+06,03727,Los Angeles,California
+06,03728,Los Angeles,California
+06,03729,Los Angeles,California
+06,03730,Los Angeles,California
+06,03731,Los Angeles,California
+06,03732,Los Angeles,California
+06,03733,Los Angeles,California
+06,03734,Los Angeles,California
+06,03735,Los Angeles,California
+06,03736,Los Angeles,California
+06,03737,Los Angeles,California
+06,03738,Los Angeles,California
+06,03739,Los Angeles,California
+06,03740,Los Angeles,California
+06,03741,Los Angeles,California
+06,03742,Los Angeles,California
+06,03743,Los Angeles,California
+06,03744,Los Angeles,California
+06,03745,Los Angeles,California
+06,03746,Los Angeles,California
+06,03747,Los Angeles,California
+06,03748,Los Angeles,California
+06,03749,Los Angeles,California
+06,03750,Los Angeles,California
+06,03751,Los Angeles,California
+06,03752,Los Angeles,California
+06,03753,Los Angeles,California
+06,03754,Los Angeles,California
+06,03755,Los Angeles,California
+06,03756,Los Angeles,California
+06,03757,Los Angeles,California
+06,03758,Los Angeles,California
+06,03759,Los Angeles,California
+06,03760,Los Angeles,California
+06,03761,Los Angeles,California
+06,03762,Los Angeles,California
+06,03763,Los Angeles,California
+06,03764,Los Angeles,California
+06,03765,Los Angeles,California
+06,03766,Los Angeles,California
+06,03767,Los Angeles,California
+06,03768,Los Angeles,California
+06,03769,Los Angeles,California
+17,03420,Chicago,Illinois
+17,03422,Chicago,Illinois
+17,03501,Chicago,Illinois
+17,03502,Chicago,Illinois
+17,03503,Chicago,Illinois
+17,03504,Chicago,Illinois
+17,03520,Chicago,Illinois
+17,03521,Chicago,Illinois
+17,03522,Chicago,Illinois
+17,03523,Chicago,Illinois
+17,03524,Chicago,Illinois
+17,03525,Chicago,Illinois
+17,03526,Chicago,Illinois
+17,03527,Chicago,Illinois
+17,03528,Chicago,Illinois
+17,03529,Chicago,Illinois
+17,03530,Chicago,Illinois
+17,03531,Chicago,Illinois
+17,03532,Chicago,Illinois
+48,04601,Houston,Texas
+48,04602,Houston,Texas
+48,04603,Houston,Texas
+48,04604,Houston,Texas
+48,04607,Houston,Texas
+48,04608,Houston,Texas
+48,04609,Houston,Texas
+48,04610,Houston,Texas
+48,04611,Houston,Texas
+48,04614,Houston,Texas
+48,04616,Houston,Texas
+48,04617,Houston,Texas
+48,04618,Houston,Texas
+48,04624,Houston,Texas
+48,04626,Houston,Texas
+48,04634,Houston,Texas
+48,04635,Houston,Texas
+48,04636,Houston,Texas
+48,04637,Houston,Texas
+48,04638,Houston,Texas
+42,03201,Philadelphia,Pennsylvania
+42,03202,Philadelphia,Pennsylvania
+42,03203,Philadelphia,Pennsylvania
+42,03204,Philadelphia,Pennsylvania
+42,03205,Philadelphia,Pennsylvania
+42,03206,Philadelphia,Pennsylvania
+42,03207,Philadelphia,Pennsylvania
+42,03208,Philadelphia,Pennsylvania
+42,03209,Philadelphia,Pennsylvania
+42,03210,Philadelphia,Pennsylvania
+42,03211,Philadelphia,Pennsylvania
+04,00113,Phoenix,Arizona
+04,00114,Phoenix,Arizona
+04,00115,Phoenix,Arizona
+04,00116,Phoenix,Arizona
+04,00117,Phoenix,Arizona
+04,00118,Phoenix,Arizona
+04,00119,Phoenix,Arizona
+04,00120,Phoenix,Arizona
+04,00122,Phoenix,Arizona
+04,00123,Phoenix,Arizona
+04,00125,Phoenix,Arizona
+04,00128,Phoenix,Arizona
+48,05901,San Antonio,Texas
+48,05902,San Antonio,Texas
+48,05903,San Antonio,Texas
+48,05904,San Antonio,Texas
+48,05905,San Antonio,Texas
+48,05906,San Antonio,Texas
+48,05907,San Antonio,Texas
+48,05908,San Antonio,Texas
+48,05910,San Antonio,Texas
+48,05911,San Antonio,Texas
+48,05912,San Antonio,Texas
+48,05915,San Antonio,Texas
+06,07310,San Diego,California
+06,07311,San Diego,California
+06,07312,San Diego,California
+06,07315,San Diego,California
+06,07316,San Diego,California
+06,07317,San Diego,California
+06,07318,San Diego,California
+06,07322,San Diego,California
+48,02307,Dallas,Texas
+48,02311,Dallas,Texas
+48,02313,Dallas,Texas
+48,02314,Dallas,Texas
+48,02315,Dallas,Texas
+48,02316,Dallas,Texas
+06,08505,San Jose,California
+06,08509,San Jose,California
+06,08510,San Jose,California
+06,08511,San Jose,California
+06,08512,San Jose,California
+06,08513,San Jose,California
+06,08514,San Jose,California
+48,05203,Austin,Texas
+48,05302,Austin,Texas
+48,05303,Austin,Texas
+48,05304,Austin,Texas
+48,05305,Austin,Texas
+48,05306,Austin,Texas
+48,05307,Austin,Texas
+48,05308,Austin,Texas
+48,05309,Austin,Texas
+18,02301,Indianapolis,Indiana
+18,02302,Indianapolis,Indiana
+18,02304,Indianapolis,Indiana
+18,02305,Indianapolis,Indiana
+18,02306,Indianapolis,Indiana
+18,02307,Indianapolis,Indiana
+12,03101,Jacksonville,Florida
+12,03102,Jacksonville,Florida
+12,03103,Jacksonville,Florida
+12,03104,Jacksonville,Florida
+12,03105,Jacksonville,Florida
+12,03106,Jacksonville,Florida
+12,03107,Jacksonville,Florida
+06,07501,San Francisco,California
+06,07502,San Francisco,California
+06,07503,San Francisco,California
+06,07504,San Francisco,California
+06,07505,San Francisco,California
+06,07506,San Francisco,California
+06,07507,San Francisco,California
+39,04105,Columbus,Ohio
+39,04106,Columbus,Ohio
+39,04110,Columbus,Ohio
+37,03101,Charlotte,North Carolina
+37,03102,Charlotte,North Carolina
+37,03103,Charlotte,North Carolina
+37,03104,Charlotte,North Carolina
+37,03105,Charlotte,North Carolina
+48,02506,Fort Worth,Texas
+48,02508,Fort Worth,Texas
+48,02509,Fort Worth,Texas
+48,02511,Fort Worth,Texas
+48,02512,Fort Worth,Texas
+48,02513,Fort Worth,Texas
+48,02514,Fort Worth,Texas
+48,02515,Fort Worth,Texas
+48,02516,Fort Worth,Texas
+26,03208,Detroit,Michigan
+26,03209,Detroit,Michigan
+26,03210,Detroit,Michigan
+26,03211,Detroit,Michigan
+26,03212,Detroit,Michigan
+47,03201,Memphis,Tennessee
+47,03202,Memphis,Tennessee
+47,03207,Memphis,Tennessee
+47,03208,Memphis,Tennessee
+53,11601,Seattle,Washington
+53,11602,Seattle,Washington
+53,11603,Seattle,Washington
+53,11604,Seattle,Washington
+53,11605,Seattle,Washington
+08,00812,Denver,Colorado
+08,00813,Denver,Colorado
+08,00814,Denver,Colorado
+08,00815,Denver,Colorado
+08,00816,Denver,Colorado
+11,00101,Washington,District of Columbia
+11,00102,Washington,District of Columbia
+11,00103,Washington,District of Columbia
+11,00104,Washington,District of Columbia
+11,00105,Washington,District of Columbia
+25,03301,Boston,Massachusetts
+25,03302,Boston,Massachusetts
+25,03303,Boston,Massachusetts
+25,03304,Boston,Massachusetts
+25,03305,Boston,Massachusetts
+47,02501,Nashville,Tennessee
+47,02502,Nashville,Tennessee
+47,02503,Nashville,Tennessee
+47,02504,Nashville,Tennessee
+47,02505,Nashville,Tennessee
+24,00801,Baltimore,Maryland
+24,00802,Baltimore,Maryland
+24,00803,Baltimore,Maryland
+24,00804,Baltimore,Maryland
+24,00805,Baltimore,Maryland
+40,00800,Oklahoma City,Oklahoma
+40,00900,Oklahoma City,Oklahoma
+40,01001,Oklahoma City,Oklahoma
+40,01002,Oklahoma City,Oklahoma
+40,01003,Oklahoma City,Oklahoma
+40,01004,Oklahoma City,Oklahoma
+40,01005,Oklahoma City,Oklahoma
+40,01006,Oklahoma City,Oklahoma
+21,01701,Louisville,Kentucky
+21,01702,Louisville,Kentucky
+21,01703,Louisville,Kentucky
+21,01704,Louisville,Kentucky
+21,01705,Louisville,Kentucky
+21,01706,Louisville,Kentucky
+41,01301,Portland,Oregon
+41,01302,Portland,Oregon
+41,01303,Portland,Oregon
+41,01305,Portland,Oregon
+41,01314,Portland,Oregon
+32,00401,Las Vegas,Nevada
+32,00402,Las Vegas,Nevada
+32,00403,Las Vegas,Nevada
+32,00404,Las Vegas,Nevada
+32,00405,Las Vegas,Nevada
+32,00406,Las Vegas,Nevada
+32,00407,Las Vegas,Nevada
+55,41001,Milwaukee,Wisconsin
+55,41002,Milwaukee,Wisconsin
+55,41003,Milwaukee,Wisconsin
+55,41004,Milwaukee,Wisconsin
+55,41005,Milwaukee,Wisconsin
+35,00801,Albuquerque,New Mexico
+35,00802,Albuquerque,New Mexico
+35,00803,Albuquerque,New Mexico
+35,00804,Albuquerque,New Mexico
+35,00805,Albuquerque,New Mexico
+35,00806,Albuquerque,New Mexico
+04,00206,Tucson,Arizona
+04,00207,Tucson,Arizona
+04,00208,Tucson,Arizona
+04,00209,Tucson,Arizona
+06,06705,Sacramento,California
+06,06706,Sacramento,California
+06,06707,Sacramento,California
+06,06708,Sacramento,California
+06,06709,Sacramento,California
+06,03763,Long Beach,California
+06,03765,Long Beach,California
+06,03766,Long Beach,California
+06,03769,Long Beach,California
+29,00902,Kansas City,Missouri
+29,01001,Kansas City,Missouri
+29,01005,Kansas City,Missouri
+04,00101,Mesa,Arizona
+04,00102,Mesa,Arizona
+04,00103,Mesa,Arizona
+04,00104,Mesa,Arizona
+51,51164,Virginia Beach,Virginia
+51,51165,Virginia Beach,Virginia
+51,51166,Virginia Beach,Virginia
+13,01003,Atlanta,Georgia
+13,01006,Atlanta,Georgia
+13,01007,Atlanta,Georgia
+13,04600,Atlanta,Georgia
+08,04101,Colorado Springs,Colorado
+08,04102,Colorado Springs,Colorado
+08,04103,Colorado Springs,Colorado
+08,04104,Colorado Springs,Colorado
+08,04105,Colorado Springs,Colorado
+08,04106,Colorado Springs,Colorado
+31,00901,Omaha,Nebraska
+31,00902,Omaha,Nebraska
+31,00903,Omaha,Nebraska
+31,00904,Omaha,Nebraska
+37,01201,Raleigh,North Carolina
+37,01202,Raleigh,North Carolina
+37,01203,Raleigh,North Carolina
+37,01204,Raleigh,North Carolina
+37,01206,Raleigh,North Carolina
+12,08605,Miami,Florida
+12,08611,Miami,Florida
+12,08613,Miami,Florida
+12,08614,Miami,Florida
+12,08615,Miami,Florida
+12,08617,Miami,Florida
+06,00104,Oakland,California
+27,01406,Minneapolis,Minnesota
+27,01407,Minneapolis,Minnesota
+40,01201,Tulsa,Oklahoma
+40,01204,Tulsa,Oklahoma
+39,00905,Cleveland,Ohio
+39,00906,Cleveland,Ohio
+39,00908,Cleveland,Ohio
+20,01302,Wichita,Kansas
+20,01303,Wichita,Kansas
+48,02507,Arlington,Texas
