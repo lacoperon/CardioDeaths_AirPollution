@@ -27,14 +27,15 @@ combined_data <- plyr::join_all(
                     list(acs_data, epa_data, cdc_data_combined, cvd_data),
                     by=c("City", "year")) %>%
   dplyr::select(-MetroArea, -State) %>%
-  dplyr::mutate(Smoke = as.numeric(Smoke), BingeDrink = as.numeric(BingeDrink))  %>%
+  dplyr::mutate(Smoke = as.numeric(Smoke), BingeDrink = as.numeric(BingeDrink),
+                Asthma = as.numeric(Asthma))  %>%
   dplyr::mutate(City = as.factor(City)) %>%
   filter(! is.na(CVDperCapita))
 
 combined_data2 <- plyr::join_all(
   list(acs_data, cdc_data_combined, cvd_data),
   by=c("City", "year")) %>%
-  dplyr::select(-MetroArea, -State) %>%
+  dplyr::select(-MetroArea) %>%
   dplyr::mutate(Smoke = as.numeric(Smoke), BingeDrink = as.numeric(BingeDrink)) %>%
   dplyr::mutate(City = as.factor(City)) %>%
   filter(! is.na(CVDperCapita))
@@ -98,25 +99,25 @@ grun.fe <- plm(( CVDperCapita ~ income + racaian + racasn + racblk + racsor +
                    racwht + selfcare_diff + is_medicare + is_va + public_assist_inc +
                    ret_income + avg_schl + age + is_insured + avg_weight + NO2 +
                    O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
-                   BingeDrink ) , data = p_combined_data, model = "within", effect="individual")
+                   BingeDrink + Asthma) , data = p_combined_data, model = "within", effect="individual")
 
 grun.re <- plm(( CVDperCapita ~ income + racaian + racasn + racblk + racsor +
                    racwht +
                    is_va +
                    ret_income + avg_schl + age + is_insured + avg_weight + NO2 +
                    O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
-                   BingeDrink ) , data = p_combined_data, model = "random", effect="individual")
+                   BingeDrink) , data = p_combined_data, model = "random", effect="individual")
 # Same thing when keeping data, removing pollution vals
 grun.fe2 <- plm(( CVDperCapita ~ income + racaian + racasn + racblk + racsor +
                     racwht + selfcare_diff + is_medicare + is_va + public_assist_inc +
                     ret_income + avg_schl + age + is_insured + avg_weight + NO2 +
                     O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
-                    BingeDrink ) , data = p_combined_data2, model = "within", effect="individual")
+                    BingeDrink + Asthma ) , data = p_combined_data2, model = "within", effect="individual")
 
 
 # No significant squared relationship of SO2, there is w avg_weight, age, etc.
 grun.feb <- plm(( CVDperCapita ~ income + racaian + poly(racasn, 2, raw=T) + racblk + racsor +
-                   racwht +
+                   racwht + Asthma +
                    poly(is_va, 2, raw=T) +
                    ret_income + avg_schl + poly(age, 2, raw=T) + is_insured  + NO2 +
                    O3 + poly(SO2, 2, raw=T)+ poly(avg_weight, 2, raw=T) + 
@@ -127,13 +128,13 @@ grun.fec <- plm(( CVDperCapita ~ income + racaian + racasn + racblk + racsor +
                     racwht + selfcare_diff + is_medicare + is_va + public_assist_inc +
                     ret_income + avg_schl + poly(age, 2, raw=T) + is_insured + poly(avg_weight, 2, raw=T) + NO2 +
                     O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
-                    BingeDrink ) , data = p_combined_data, model = "within", effect="individual")
+                    BingeDrink + Asthma ) , data = p_combined_data, model = "within", effect="individual")
 
 lsdv <- glm(CVDperCapita ~ income + racaian + racasn + racblk + racsor +
       racwht + selfcare_diff + is_medicare + is_va + public_assist_inc +
       ret_income + avg_schl + poly(age, 2, raw=T) + is_insured + poly(avg_weight, 2, raw=T) + NO2 +
       O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
-      BingeDrink + City, data = combined_data)
+      BingeDrink + Asthma + City, data = combined_data)
 
 summary(lsdv) #LSDV shows that cities are important -- 
 #              also that more data would be helpful
@@ -232,6 +233,7 @@ x1 - x2
 # 400 PUMA regions, 100K ppl each approx, w coeff of 5.2328 for SO2
 400 * 5.2328 * (x1-x2)
 
-combined_data %>% filter(SO2 > 1.5) %>% group_by(City) %>% summarize(n=n())
+combined_data %>% filter(SO2 > 1.5) %>% group_by(City) %>% summarize(n=n()) %>%
+  arrange(desc(n))
 
 # WE SHOULD ADD ASTHMA AS A FACTOR

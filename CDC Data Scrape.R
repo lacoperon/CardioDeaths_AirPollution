@@ -42,12 +42,13 @@ adults_cholesterol_checked <- get_next_5_tables(url, j=51, column_names)%>% sele
 adults_exercise_moderately <- get_next_5_tables(url, j=71, column_names)%>% select("%")
 adults_smoke <- get_next_5_tables(url, j=101, column_names) %>% select("%")
 adults_binge_drink <- get_next_5_tables(url, j=111, column_names) %>% select("%")
+adults_asthma <- get_next_5_tables(url, j=181, column_names) %>% select("%")
 
 df_combined <- cbind(adults_good_better_health, adults_doctor_12_months, 
          adults_cholesterol_checked, adults_exercise_moderately,
-         adults_smoke, adults_binge_drink)
+         adults_smoke, adults_binge_drink, adults_asthma)
 
 colnames(df_combined) <- c("MetroArea", "GoodHealth", "SeenDoctor12mo",
-                           "CholestCheck", "Exercise", "Smoke", "BingeDrink")
+                           "CholestCheck", "Exercise", "Smoke", "BingeDrink", "Asthma")
 
 write_csv(df_combined, "./data/metro_cdc_data.csv")
