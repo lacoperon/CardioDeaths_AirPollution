@@ -145,6 +145,7 @@ summary(grun.fe)
 summary(grun.fe2)
 summary(grun.feb)
 summary(grun.fec) # final model, shows a bunch of significant factors
+# 68% adjusted R-squared -- that's awesome!
 
 library(ggplot2)
 res <- data.frame(residuals(grun.fe))
@@ -167,7 +168,7 @@ ggplot(res, aes(Res)) + geom_density(adjust=0.4, color="darkblue", fill="darkblu
 # see differences between the two sets of coefficients.
 # 
 # This is because the random effects estimator makes an assumption (the 
-#                                                                   random effects are orthogonal to the regressors) that the fixed effects 
+# random effects are orthogonal to the regressors) that the fixed effects 
 # estimator does not.  If this assumption is wrong, the random effects 
 # estimator will be inconsistent, but the fixed effects estimator is 
 # unaffected.  Hence, if the assumption is wrong, this will be reflected in 
@@ -189,3 +190,48 @@ ggplot(res, aes(Res)) + geom_density(adjust=0.4, color="darkblue", fill="darkblu
 #https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3392899/
 
 # Also, perhaps add a lag term for the pollutants too
+
+xs <- seq(18, 100, 1)
+ys <- 1.0316e+00 * xs^2 - 7.8739e+01 * xs
+
+xy <- data.frame(xs, ys)
+library(ggplot2)
+ggplot(xy, aes(xs, ys)) + geom_line() +
+  labs(title="Effect of average age on CVD risk", 
+       y="Additional CVD deaths per 100K", x="Average age") +
+  xlim(20, 50) # risk increases for young, old, consistent with literature
+
+xs <- seq(18, 100, 1)
+ys <- 1.0316e+00 * xs^2 - 7.8739e+01 * xs
+
+xy <- data.frame(xs, ys)
+library(ggplot2)
+ggplot(xy, aes(xs, ys)) + geom_line() +
+  labs(title="Effect of average age on CVD risk", 
+       y="Additional CVD deaths per 100K", x="Average age") +
+  xlim(20, 50) # risk increases for young, old, consistent with literature
+
+xs2 <- seq(80, 180, 1)
+ys2 <- -6.9618e-03 * xs2 ^ 2 + 2.0270e+00 * xs2
+
+xy2 <- data.frame(xs2, ys2)
+
+ggplot(xy2, aes(xs2, ys2)) + geom_line() +
+  labs(title="Effect of average weight on CVD risk", 
+       y="Additional CVD deaths per 100K", x="Average weight") +
+  xlim(80, 180) # CVD risk increases with avg weight, 
+                # up to certain point (diminishing effect)
+
+
+# regular mean
+x1 <- mean(combined_data$SO2, na.rm=T)
+# mean in which all measurements were taken below 1.5
+x2 <- mean(sapply(combined_data$SO2, function(x) { min(x, 1.5)}), na.rm=T)
+x1 - x2
+# Back of envelope calculations
+# 400 PUMA regions, 100K ppl each approx, w coeff of 5.2328 for SO2
+400 * 5.2328 * (x1-x2)
+
+combined_data %>% filter(SO2 > 1.5) %>% group_by(City) %>% summarize(n=n())
+
+# WE SHOULD ADD ASTHMA AS A FACTOR
