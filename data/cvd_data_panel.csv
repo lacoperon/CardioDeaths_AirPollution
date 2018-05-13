@@ -1,0 +1,1576 @@
+City,year,CVDperCapita
+Albuquerque,1980,360.5
+Albuquerque,1981,327.8
+Albuquerque,1982,347.6
+Albuquerque,1983,343.6
+Albuquerque,1984,343.7
+Albuquerque,1985,340.1
+Albuquerque,1986,337.6
+Albuquerque,1987,318.8
+Albuquerque,1988,309.1
+Albuquerque,1989,308.9
+Albuquerque,1990,296.4
+Albuquerque,1991,292.4
+Albuquerque,1992,285.1
+Albuquerque,1993,285.7
+Albuquerque,1994,290.6
+Albuquerque,1995,291.3
+Albuquerque,1996,287
+Albuquerque,1997,280.3
+Albuquerque,1998,260.6
+Albuquerque,1999,268.6
+Albuquerque,2000,252.6
+Albuquerque,2001,267.4
+Albuquerque,2002,255.9
+Albuquerque,2003,247.9
+Albuquerque,2004,242.9
+Albuquerque,2005,240.7
+Albuquerque,2006,242.4
+Albuquerque,2007,237.7
+Albuquerque,2008,228.5
+Albuquerque,2009,222.9
+Albuquerque,2010,220
+Albuquerque,2011,217.1
+Albuquerque,2012,212.3
+Albuquerque,2013,210.4
+Albuquerque,2014,216.8
+Arlington,1980,519.9
+Arlington,1981,525.2
+Arlington,1982,496.5
+Arlington,1983,509.8
+Arlington,1984,508.5
+Arlington,1985,495.3
+Arlington,1986,485.3
+Arlington,1987,470.7
+Arlington,1988,460.8
+Arlington,1989,462.2
+Arlington,1990,430.9
+Arlington,1991,422.4
+Arlington,1992,416.8
+Arlington,1993,414.3
+Arlington,1994,410
+Arlington,1995,400.4
+Arlington,1996,402.2
+Arlington,1997,401
+Arlington,1998,377.8
+Arlington,1999,380.2
+Arlington,2000,376.6
+Arlington,2001,369.2
+Arlington,2002,361.2
+Arlington,2003,333.2
+Arlington,2004,321.5
+Arlington,2005,314.7
+Arlington,2006,295.9
+Arlington,2007,293.9
+Arlington,2008,285.4
+Arlington,2009,273.1
+Arlington,2010,278.9
+Arlington,2011,256
+Arlington,2012,257.4
+Arlington,2013,253.7
+Arlington,2014,257.1
+Atlanta,1980,488.75
+Atlanta,1981,476.75
+Atlanta,1982,455.35
+Atlanta,1983,451.5
+Atlanta,1984,452.04999999999995
+Atlanta,1985,445.1
+Atlanta,1986,448.05
+Atlanta,1987,428.55
+Atlanta,1988,431.45
+Atlanta,1989,421.95
+Atlanta,1990,395.25
+Atlanta,1991,393.54999999999995
+Atlanta,1992,380.2
+Atlanta,1993,387.35
+Atlanta,1994,375.15
+Atlanta,1995,376.29999999999995
+Atlanta,1996,372.3
+Atlanta,1997,359.1
+Atlanta,1998,356.35
+Atlanta,1999,342.4
+Atlanta,2000,342.15
+Atlanta,2001,330.29999999999995
+Atlanta,2002,319.45000000000005
+Atlanta,2003,305.20000000000005
+Atlanta,2004,293.79999999999995
+Atlanta,2005,283.2
+Atlanta,2006,280.1
+Atlanta,2007,266.79999999999995
+Atlanta,2008,272.25
+Atlanta,2009,262.2
+Atlanta,2010,255
+Atlanta,2011,244.15
+Atlanta,2012,238.64999999999998
+Atlanta,2013,236.9
+Atlanta,2014,241.95
+Austin,1980,448.6666666666667
+Austin,1981,437.6333333333333
+Austin,1982,436.26666666666665
+Austin,1983,418.6333333333333
+Austin,1984,411.03333333333336
+Austin,1985,399
+Austin,1986,391.43333333333334
+Austin,1987,374.7
+Austin,1988,368.2
+Austin,1989,356.3333333333333
+Austin,1990,344.73333333333335
+Austin,1991,333.8666666666667
+Austin,1992,327.76666666666665
+Austin,1993,325.1333333333333
+Austin,1994,319.93333333333334
+Austin,1995,319.8
+Austin,1996,307.3
+Austin,1997,303.4
+Austin,1998,295.26666666666665
+Austin,1999,295.3333333333333
+Austin,2000,291.5
+Austin,2001,278.5333333333333
+Austin,2002,273.9666666666667
+Austin,2003,260.4
+Austin,2004,244.63333333333333
+Austin,2005,234.5
+Austin,2006,228.16666666666666
+Austin,2007,223.23333333333335
+Austin,2008,217.16666666666666
+Austin,2009,206.06666666666666
+Austin,2010,204.96666666666667
+Austin,2011,199.5
+Austin,2012,200.6
+Austin,2013,194.83333333333331
+Austin,2014,195.63333333333333
+Baltimore,1980,589.7
+Baltimore,1981,567.7
+Baltimore,1982,552.6
+Baltimore,1983,573.8
+Baltimore,1984,571.9
+Baltimore,1985,567.7
+Baltimore,1986,555.5
+Baltimore,1987,562
+Baltimore,1988,562
+Baltimore,1989,530.6
+Baltimore,1990,522.5
+Baltimore,1991,500.4
+Baltimore,1992,493.1
+Baltimore,1993,505.7
+Baltimore,1994,513
+Baltimore,1995,508.6
+Baltimore,1996,508.2
+Baltimore,1997,500.4
+Baltimore,1998,480.8
+Baltimore,1999,499.8
+Baltimore,2000,479.1
+Baltimore,2001,473.1
+Baltimore,2002,445.8
+Baltimore,2003,455.9
+Baltimore,2004,426.9
+Baltimore,2005,430.3
+Baltimore,2006,407.1
+Baltimore,2007,403.5
+Baltimore,2008,385.6
+Baltimore,2009,384.6
+Baltimore,2010,365.5
+Baltimore,2011,354.7
+Baltimore,2012,358.2
+Baltimore,2013,404.7
+Baltimore,2014,387.1
+Boston,1980,500.2
+Boston,1981,486.8
+Boston,1982,483.2
+Boston,1983,473.8
+Boston,1984,472.3
+Boston,1985,462.2
+Boston,1986,450.2
+Boston,1987,445.1
+Boston,1988,442.7
+Boston,1989,405.2
+Boston,1990,405.6
+Boston,1991,383.3
+Boston,1992,380.7
+Boston,1993,382.9
+Boston,1994,357.6
+Boston,1995,362.1
+Boston,1996,349
+Boston,1997,339
+Boston,1998,332.9
+Boston,1999,319.2
+Boston,2000,309.1
+Boston,2001,307.2
+Boston,2002,288.7
+Boston,2003,285.2
+Boston,2004,270.4
+Boston,2005,257.8
+Boston,2006,249.6
+Boston,2007,231.7
+Boston,2008,229
+Boston,2009,219.6
+Boston,2010,212
+Boston,2011,201.5
+Boston,2012,201.4
+Boston,2013,198
+Boston,2014,196.3
+Charlotte,1980,492.3
+Charlotte,1981,486.3
+Charlotte,1982,453.2
+Charlotte,1983,455.2
+Charlotte,1984,455.5
+Charlotte,1985,446.2
+Charlotte,1986,444.6
+Charlotte,1987,435.8
+Charlotte,1988,420.5
+Charlotte,1989,400.8
+Charlotte,1990,387.4
+Charlotte,1991,379.7
+Charlotte,1992,370.7
+Charlotte,1993,362.8
+Charlotte,1994,358
+Charlotte,1995,351.7
+Charlotte,1996,343.2
+Charlotte,1997,328.6
+Charlotte,1998,316.4
+Charlotte,1999,316.9
+Charlotte,2000,319.3
+Charlotte,2001,293.3
+Charlotte,2002,287.2
+Charlotte,2003,277.7
+Charlotte,2004,256.1
+Charlotte,2005,247
+Charlotte,2006,238
+Charlotte,2007,238.3
+Charlotte,2008,224
+Charlotte,2009,221.3
+Charlotte,2010,211.7
+Charlotte,2011,209.1
+Charlotte,2012,207.3
+Charlotte,2013,210.2
+Charlotte,2014,210.9
+Chicago,1980,540.9000000000001
+Chicago,1981,530.55
+Chicago,1982,516.05
+Chicago,1983,515.3
+Chicago,1984,495.15
+Chicago,1985,484.6
+Chicago,1986,486.8
+Chicago,1987,462.45000000000005
+Chicago,1988,458.95
+Chicago,1989,430.2
+Chicago,1990,420.55
+Chicago,1991,413.65
+Chicago,1992,392.6
+Chicago,1993,392.3
+Chicago,1994,389.79999999999995
+Chicago,1995,396.1
+Chicago,1996,370.9
+Chicago,1997,354.05
+Chicago,1998,353.85
+Chicago,1999,356.45
+Chicago,2000,344.45000000000005
+Chicago,2001,333.45
+Chicago,2002,323.2
+Chicago,2003,309.2
+Chicago,2004,291.1
+Chicago,2005,289.8
+Chicago,2006,279.9
+Chicago,2007,263.15
+Chicago,2008,262.45
+Chicago,2009,249.95
+Chicago,2010,243.85
+Chicago,2011,244.3
+Chicago,2012,235.6
+Chicago,2013,233.4
+Chicago,2014,238.5
+Cleveland,1980,545.5
+Cleveland,1981,527.2
+Cleveland,1982,507.5
+Cleveland,1983,509.6
+Cleveland,1984,507.9
+Cleveland,1985,500.8
+Cleveland,1986,502.9
+Cleveland,1987,481.6
+Cleveland,1988,480.1
+Cleveland,1989,460
+Cleveland,1990,446.8
+Cleveland,1991,436.7
+Cleveland,1992,413.7
+Cleveland,1993,416.8
+Cleveland,1994,420.6
+Cleveland,1995,425.2
+Cleveland,1996,404.4
+Cleveland,1997,395.2
+Cleveland,1998,394.3
+Cleveland,1999,380.2
+Cleveland,2000,389.5
+Cleveland,2001,395.4
+Cleveland,2002,379.9
+Cleveland,2003,365.2
+Cleveland,2004,355.1
+Cleveland,2005,340.1
+Cleveland,2006,327.5
+Cleveland,2007,316.3
+Cleveland,2008,307.6
+Cleveland,2009,289.5
+Cleveland,2010,286.6
+Cleveland,2011,299.4
+Cleveland,2012,290.3
+Cleveland,2013,295.5
+Cleveland,2014,288.6
+Colorado Springs,1980,410
+Colorado Springs,1981,398.8
+Colorado Springs,1982,396.3
+Colorado Springs,1983,379.3
+Colorado Springs,1984,383.6
+Colorado Springs,1985,369.6
+Colorado Springs,1986,365.8
+Colorado Springs,1987,361.6
+Colorado Springs,1988,350.7
+Colorado Springs,1989,350.5
+Colorado Springs,1990,332.2
+Colorado Springs,1991,333
+Colorado Springs,1992,313.9
+Colorado Springs,1993,314.4
+Colorado Springs,1994,308.8
+Colorado Springs,1995,303.7
+Colorado Springs,1996,309.6
+Colorado Springs,1997,303.5
+Colorado Springs,1998,284.2
+Colorado Springs,1999,292
+Colorado Springs,2000,288.6
+Colorado Springs,2001,277.9
+Colorado Springs,2002,269.5
+Colorado Springs,2003,277.7
+Colorado Springs,2004,252.4
+Colorado Springs,2005,259.2
+Colorado Springs,2006,245.3
+Colorado Springs,2007,238.1
+Colorado Springs,2008,231.9
+Colorado Springs,2009,224.9
+Colorado Springs,2010,218.1
+Colorado Springs,2011,220.7
+Colorado Springs,2012,210.3
+Colorado Springs,2013,213.8
+Colorado Springs,2014,218.8
+Columbus,1980,503.93333333333334
+Columbus,1981,491.46666666666664
+Columbus,1982,469.3333333333333
+Columbus,1983,472.6333333333333
+Columbus,1984,467.43333333333334
+Columbus,1985,453
+Columbus,1986,452.56666666666666
+Columbus,1987,447.53333333333336
+Columbus,1988,432.5
+Columbus,1989,409.03333333333336
+Columbus,1990,394.76666666666665
+Columbus,1991,387.59999999999997
+Columbus,1992,370.8666666666667
+Columbus,1993,365.73333333333335
+Columbus,1994,371.6666666666667
+Columbus,1995,367.3333333333333
+Columbus,1996,360.2
+Columbus,1997,350.6333333333333
+Columbus,1998,338.1666666666667
+Columbus,1999,344.73333333333335
+Columbus,2000,338.3
+Columbus,2001,329.46666666666664
+Columbus,2002,319.1
+Columbus,2003,311.90000000000003
+Columbus,2004,294.59999999999997
+Columbus,2005,284.06666666666666
+Columbus,2006,273.3666666666667
+Columbus,2007,259.1333333333333
+Columbus,2008,257.73333333333335
+Columbus,2009,252.63333333333333
+Columbus,2010,244.1
+Columbus,2011,239.9
+Columbus,2012,238.03333333333333
+Columbus,2013,237.66666666666666
+Columbus,2014,238.83333333333334
+Dallas,1980,521.52
+Dallas,1981,513.84
+Dallas,1982,498.4
+Dallas,1983,502.18
+Dallas,1984,492.54
+Dallas,1985,476.34000000000003
+Dallas,1986,464.84
+Dallas,1987,451.38
+Dallas,1988,440.48
+Dallas,1989,429.34
+Dallas,1990,412.2
+Dallas,1991,401.66
+Dallas,1992,390.76
+Dallas,1993,393.24
+Dallas,1994,387.3
+Dallas,1995,383.7
+Dallas,1996,375.2
+Dallas,1997,363.38
+Dallas,1998,357
+Dallas,1999,355.08
+Dallas,2000,355.86
+Dallas,2001,343.38
+Dallas,2002,336.15999999999997
+Dallas,2003,320.16
+Dallas,2004,306.46
+Dallas,2005,295.12
+Dallas,2006,282.66
+Dallas,2007,274.58
+Dallas,2008,268.62
+Dallas,2009,263.76
+Dallas,2010,258.9
+Dallas,2011,252.92
+Dallas,2012,249.07999999999998
+Dallas,2013,248.84
+Dallas,2014,249.94
+Denver,1980,395
+Denver,1981,404.7
+Denver,1982,393.4
+Denver,1983,373.8
+Denver,1984,375.7
+Denver,1985,367.7
+Denver,1986,362.3
+Denver,1987,356.1
+Denver,1988,348.6
+Denver,1989,331.5
+Denver,1990,332.3
+Denver,1991,313
+Denver,1992,312.3
+Denver,1993,305.2
+Denver,1994,305.8
+Denver,1995,305.4
+Denver,1996,302.3
+Denver,1997,292.2
+Denver,1998,295.6
+Denver,1999,285.4
+Denver,2000,277.8
+Denver,2001,278.3
+Denver,2002,274.9
+Denver,2003,265.4
+Denver,2004,248.5
+Denver,2005,241.1
+Denver,2006,232.8
+Denver,2007,221.3
+Denver,2008,210.5
+Denver,2009,208.1
+Denver,2010,200.9
+Denver,2011,200.5
+Denver,2012,201.8
+Denver,2013,198.4
+Denver,2014,210.8
+Detroit,1980,610.9
+Detroit,1981,627.4
+Detroit,1982,612.1
+Detroit,1983,610.5
+Detroit,1984,600.4
+Detroit,1985,604.9
+Detroit,1986,609.4
+Detroit,1987,594.6
+Detroit,1988,579.5
+Detroit,1989,551.1
+Detroit,1990,528.5
+Detroit,1991,512.2
+Detroit,1992,495.8
+Detroit,1993,506.7
+Detroit,1994,507.6
+Detroit,1995,503.9
+Detroit,1996,483.8
+Detroit,1997,472.4
+Detroit,1998,470
+Detroit,1999,469.9
+Detroit,2000,463.7
+Detroit,2001,460.1
+Detroit,2002,444.6
+Detroit,2003,425.9
+Detroit,2004,415
+Detroit,2005,405.9
+Detroit,2006,391.4
+Detroit,2007,392.3
+Detroit,2008,385.2
+Detroit,2009,355.1
+Detroit,2010,354.4
+Detroit,2011,353.1
+Detroit,2012,363.5
+Detroit,2013,352.8
+Detroit,2014,365
+Fort Worth,1980,490.6
+Fort Worth,1981,487.75
+Fort Worth,1982,475.55
+Fort Worth,1983,478.95
+Fort Worth,1984,473.925
+Fort Worth,1985,466.175
+Fort Worth,1986,453.725
+Fort Worth,1987,446.375
+Fort Worth,1988,438.175
+Fort Worth,1989,431.35
+Fort Worth,1990,413.95
+Fort Worth,1991,404.55
+Fort Worth,1992,396
+Fort Worth,1993,399.675
+Fort Worth,1994,397.5
+Fort Worth,1995,394.975
+Fort Worth,1996,392.35
+Fort Worth,1997,382.125
+Fort Worth,1998,374.725
+Fort Worth,1999,376.375
+Fort Worth,2000,372.575
+Fort Worth,2001,362.35
+Fort Worth,2002,357.95
+Fort Worth,2003,337.9
+Fort Worth,2004,322.725
+Fort Worth,2005,314.125
+Fort Worth,2006,301.925
+Fort Worth,2007,296.15
+Fort Worth,2008,289.325
+Fort Worth,2009,281.35
+Fort Worth,2010,277.35
+Fort Worth,2011,271.875
+Fort Worth,2012,265.575
+Fort Worth,2013,265.625
+Fort Worth,2014,268.15
+Houston,1980,491.1
+Houston,1981,486.26666666666665
+Houston,1982,464.46666666666664
+Houston,1983,460.76666666666665
+Houston,1984,447.7333333333333
+Houston,1985,446.2
+Houston,1986,437.4666666666667
+Houston,1987,431.33333333333337
+Houston,1988,433.23333333333335
+Houston,1989,416.1666666666667
+Houston,1990,400.8666666666667
+Houston,1991,389.8333333333333
+Houston,1992,379.56666666666666
+Houston,1993,373.5333333333333
+Houston,1994,376.23333333333335
+Houston,1995,372.5
+Houston,1996,365.1666666666667
+Houston,1997,361.93333333333334
+Houston,1998,350.8666666666667
+Houston,1999,353.5
+Houston,2000,345.6333333333333
+Houston,2001,343.56666666666666
+Houston,2002,329.03333333333336
+Houston,2003,317.56666666666666
+Houston,2004,290.93333333333334
+Houston,2005,283.4666666666667
+Houston,2006,270.0333333333333
+Houston,2007,259.9666666666667
+Houston,2008,255.3
+Houston,2009,248.6
+Houston,2010,241.56666666666666
+Houston,2011,235.9
+Houston,2012,234.86666666666667
+Houston,2013,230.33333333333334
+Houston,2014,236.4
+Indianapolis,1980,522.6
+Indianapolis,1981,512.3
+Indianapolis,1982,486.4
+Indianapolis,1983,481.2
+Indianapolis,1984,468.2
+Indianapolis,1985,470.8
+Indianapolis,1986,465.1
+Indianapolis,1987,449.3
+Indianapolis,1988,438
+Indianapolis,1989,432.9
+Indianapolis,1990,416.4
+Indianapolis,1991,409.6
+Indianapolis,1992,403.4
+Indianapolis,1993,409.3
+Indianapolis,1994,414.8
+Indianapolis,1995,408.7
+Indianapolis,1996,413
+Indianapolis,1997,395.9
+Indianapolis,1998,391.7
+Indianapolis,1999,398.2
+Indianapolis,2000,377.1
+Indianapolis,2001,369.7
+Indianapolis,2002,363.1
+Indianapolis,2003,344.2
+Indianapolis,2004,332
+Indianapolis,2005,321
+Indianapolis,2006,335.9
+Indianapolis,2007,310.1
+Indianapolis,2008,309.7
+Indianapolis,2009,296.8
+Indianapolis,2010,291.6
+Indianapolis,2011,286.2
+Indianapolis,2012,293.4
+Indianapolis,2013,284.5
+Indianapolis,2014,291.8
+Jacksonville,1980,541.2
+Jacksonville,1981,561.2
+Jacksonville,1982,517.7
+Jacksonville,1983,519.3
+Jacksonville,1984,515.2
+Jacksonville,1985,499.1
+Jacksonville,1986,537.7
+Jacksonville,1987,488.5
+Jacksonville,1988,471.4
+Jacksonville,1989,451
+Jacksonville,1990,438.5
+Jacksonville,1991,434.5
+Jacksonville,1992,407.2
+Jacksonville,1993,420.4
+Jacksonville,1994,438
+Jacksonville,1995,434.1
+Jacksonville,1996,419.2
+Jacksonville,1997,402.8
+Jacksonville,1998,400.9
+Jacksonville,1999,395.5
+Jacksonville,2000,385.2
+Jacksonville,2001,379.7
+Jacksonville,2002,353.7
+Jacksonville,2003,348
+Jacksonville,2004,351.1
+Jacksonville,2005,327
+Jacksonville,2006,312.6
+Jacksonville,2007,309
+Jacksonville,2008,297
+Jacksonville,2009,295.8
+Jacksonville,2010,287.2
+Jacksonville,2011,290
+Jacksonville,2012,282.4
+Jacksonville,2013,288.3
+Jacksonville,2014,283.6
+Kansas City,1980,486.425
+Kansas City,1981,476.925
+Kansas City,1982,458.975
+Kansas City,1983,456.05
+Kansas City,1984,450.375
+Kansas City,1985,443.1
+Kansas City,1986,427.75
+Kansas City,1987,420.55
+Kansas City,1988,415.475
+Kansas City,1989,397.725
+Kansas City,1990,385.925
+Kansas City,1991,379.29999999999995
+Kansas City,1992,371.275
+Kansas City,1993,373.42499999999995
+Kansas City,1994,365.1
+Kansas City,1995,361.6
+Kansas City,1996,350.825
+Kansas City,1997,346.025
+Kansas City,1998,339.175
+Kansas City,1999,335.15
+Kansas City,2000,330.75
+Kansas City,2001,322.775
+Kansas City,2002,315.825
+Kansas City,2003,301.4
+Kansas City,2004,281.95
+Kansas City,2005,273.925
+Kansas City,2006,267.075
+Kansas City,2007,259.975
+Kansas City,2008,251.875
+Kansas City,2009,243.55
+Kansas City,2010,237.8
+Kansas City,2011,234.475
+Kansas City,2012,233.2
+Kansas City,2013,232.575
+Kansas City,2014,235.2
+Las Vegas,1980,517.7
+Las Vegas,1981,489.1
+Las Vegas,1982,496
+Las Vegas,1983,487.6
+Las Vegas,1984,472.6
+Las Vegas,1985,485.3
+Las Vegas,1986,465.3
+Las Vegas,1987,456.8
+Las Vegas,1988,458.3
+Las Vegas,1989,431
+Las Vegas,1990,415.8
+Las Vegas,1991,408
+Las Vegas,1992,389.9
+Las Vegas,1993,390
+Las Vegas,1994,390.9
+Las Vegas,1995,393.3
+Las Vegas,1996,379.4
+Las Vegas,1997,358.7
+Las Vegas,1998,370.4
+Las Vegas,1999,362.2
+Las Vegas,2000,344.6
+Las Vegas,2001,339.9
+Las Vegas,2002,322.7
+Las Vegas,2003,315.9
+Las Vegas,2004,305.7
+Las Vegas,2005,309.1
+Las Vegas,2006,294.1
+Las Vegas,2007,268.9
+Las Vegas,2008,265.2
+Las Vegas,2009,256.5
+Las Vegas,2010,247
+Las Vegas,2011,248.4
+Las Vegas,2012,245.7
+Las Vegas,2013,245.5
+Las Vegas,2014,244.8
+Long Beach,1980,533.5
+Long Beach,1981,511.3
+Long Beach,1982,500.9
+Long Beach,1983,490.4
+Long Beach,1984,493
+Long Beach,1985,492.5
+Long Beach,1986,485.1
+Long Beach,1987,485.1
+Long Beach,1988,482.8
+Long Beach,1989,480
+Long Beach,1990,452.8
+Long Beach,1991,436.5
+Long Beach,1992,424.7
+Long Beach,1993,415.2
+Long Beach,1994,410.5
+Long Beach,1995,389.5
+Long Beach,1996,377.6
+Long Beach,1997,373.5
+Long Beach,1998,360.8
+Long Beach,1999,367.5
+Long Beach,2000,351.2
+Long Beach,2001,344.3
+Long Beach,2002,328.7
+Long Beach,2003,321.6
+Long Beach,2004,302.9
+Long Beach,2005,292.4
+Long Beach,2006,289.9
+Long Beach,2007,271.4
+Long Beach,2008,255.7
+Long Beach,2009,249.6
+Long Beach,2010,239.3
+Long Beach,2011,239
+Long Beach,2012,232.9
+Long Beach,2013,230.2
+Long Beach,2014,218.8
+Los Angeles,1980,533.5
+Los Angeles,1981,511.3
+Los Angeles,1982,500.9
+Los Angeles,1983,490.4
+Los Angeles,1984,493
+Los Angeles,1985,492.5
+Los Angeles,1986,485.1
+Los Angeles,1987,485.1
+Los Angeles,1988,482.8
+Los Angeles,1989,480
+Los Angeles,1990,452.8
+Los Angeles,1991,436.5
+Los Angeles,1992,424.7
+Los Angeles,1993,415.2
+Los Angeles,1994,410.5
+Los Angeles,1995,389.5
+Los Angeles,1996,377.6
+Los Angeles,1997,373.5
+Los Angeles,1998,360.8
+Los Angeles,1999,367.5
+Los Angeles,2000,351.2
+Los Angeles,2001,344.3
+Los Angeles,2002,328.7
+Los Angeles,2003,321.6
+Los Angeles,2004,302.9
+Los Angeles,2005,292.4
+Los Angeles,2006,289.9
+Los Angeles,2007,271.4
+Los Angeles,2008,255.7
+Los Angeles,2009,249.6
+Los Angeles,2010,239.3
+Los Angeles,2011,239
+Los Angeles,2012,232.9
+Los Angeles,2013,230.2
+Los Angeles,2014,218.8
+Memphis,1980,600.2
+Memphis,1981,585.5
+Memphis,1982,573.4
+Memphis,1983,552.4
+Memphis,1984,559.1
+Memphis,1985,548.2
+Memphis,1986,548.1
+Memphis,1987,534.6
+Memphis,1988,514.1
+Memphis,1989,491
+Memphis,1990,494.3
+Memphis,1991,466.8
+Memphis,1992,454.8
+Memphis,1993,458.6
+Memphis,1994,478.6
+Memphis,1995,477.5
+Memphis,1996,478.4
+Memphis,1997,469.8
+Memphis,1998,460.8
+Memphis,1999,451.3
+Memphis,2000,456.8
+Memphis,2001,422.7
+Memphis,2002,430.4
+Memphis,2003,412.6
+Memphis,2004,389.7
+Memphis,2005,388.8
+Memphis,2006,358.8
+Memphis,2007,350.9
+Memphis,2008,333.8
+Memphis,2009,331.9
+Memphis,2010,320.3
+Memphis,2011,310.1
+Memphis,2012,310
+Memphis,2013,318.9
+Memphis,2014,315.3
+Mesa,1980,414.3
+Mesa,1981,401.2
+Mesa,1982,399.1
+Mesa,1983,383.9
+Mesa,1984,391.2
+Mesa,1985,369.9
+Mesa,1986,354.6
+Mesa,1987,360
+Mesa,1988,351.5
+Mesa,1989,346.8
+Mesa,1990,334.5
+Mesa,1991,318.3
+Mesa,1992,318.2
+Mesa,1993,325
+Mesa,1994,318.7
+Mesa,1995,302.7
+Mesa,1996,303.2
+Mesa,1997,289.2
+Mesa,1998,287.9
+Mesa,1999,293.3
+Mesa,2000,284.3
+Mesa,2001,275.4
+Mesa,2002,273.1
+Mesa,2003,263.3
+Mesa,2004,254.9
+Mesa,2005,253.6
+Mesa,2006,242.3
+Mesa,2007,226.3
+Mesa,2008,220.2
+Mesa,2009,216.2
+Mesa,2010,205.3
+Mesa,2011,209.3
+Mesa,2012,206.9
+Mesa,2013,202.9
+Mesa,2014,203.1
+Miami,1980,436.9
+Miami,1981,433.1
+Miami,1982,419.8
+Miami,1983,422.9
+Miami,1984,431.3
+Miami,1985,426
+Miami,1986,415
+Miami,1987,416.3
+Miami,1988,421.8
+Miami,1989,417.6
+Miami,1990,391.8
+Miami,1991,377.3
+Miami,1992,389.9
+Miami,1993,390.9
+Miami,1994,376
+Miami,1995,386.7
+Miami,1996,363
+Miami,1997,355.8
+Miami,1998,366
+Miami,1999,356.8
+Miami,2000,342.8
+Miami,2001,351.4
+Miami,2002,324.7
+Miami,2003,312
+Miami,2004,304.5
+Miami,2005,293
+Miami,2006,277.5
+Miami,2007,263.7
+Miami,2008,251.7
+Miami,2009,241.4
+Miami,2010,233
+Miami,2011,219.5
+Miami,2012,221.4
+Miami,2013,217.5
+Miami,2014,225.4
+Milwaukee,1980,494.1
+Milwaukee,1981,478.3666666666667
+Milwaukee,1982,469.3333333333333
+Milwaukee,1983,459.6333333333333
+Milwaukee,1984,458.3333333333333
+Milwaukee,1985,449.9
+Milwaukee,1986,442.93333333333334
+Milwaukee,1987,430.93333333333334
+Milwaukee,1988,422.06666666666666
+Milwaukee,1989,402.56666666666666
+Milwaukee,1990,386.9666666666667
+Milwaukee,1991,375.5
+Milwaukee,1992,360.1333333333333
+Milwaukee,1993,364.9666666666667
+Milwaukee,1994,358.3666666666667
+Milwaukee,1995,356.6666666666667
+Milwaukee,1996,344.43333333333334
+Milwaukee,1997,339.5333333333333
+Milwaukee,1998,330.3666666666667
+Milwaukee,1999,332.1666666666667
+Milwaukee,2000,329.9666666666667
+Milwaukee,2001,310.3666666666667
+Milwaukee,2002,304.7
+Milwaukee,2003,288.23333333333335
+Milwaukee,2004,272.6333333333333
+Milwaukee,2005,264.1
+Milwaukee,2006,254.6
+Milwaukee,2007,242.8
+Milwaukee,2008,241.33333333333334
+Milwaukee,2009,233.29999999999998
+Milwaukee,2010,231.79999999999998
+Milwaukee,2011,226.4
+Milwaukee,2012,228.23333333333332
+Milwaukee,2013,224.63333333333333
+Milwaukee,2014,226.53333333333333
+Minneapolis,1980,397
+Minneapolis,1981,391.1
+Minneapolis,1982,381.7
+Minneapolis,1983,376.9
+Minneapolis,1984,372
+Minneapolis,1985,375.8
+Minneapolis,1986,365.9
+Minneapolis,1987,352.3
+Minneapolis,1988,336.8
+Minneapolis,1989,327.8
+Minneapolis,1990,309.1
+Minneapolis,1991,302.6
+Minneapolis,1992,292.1
+Minneapolis,1993,293.3
+Minneapolis,1994,285.6
+Minneapolis,1995,287.8
+Minneapolis,1996,281.9
+Minneapolis,1997,268.3
+Minneapolis,1998,261.6
+Minneapolis,1999,246
+Minneapolis,2000,237.3
+Minneapolis,2001,234.3
+Minneapolis,2002,228.5
+Minneapolis,2003,211
+Minneapolis,2004,203.1
+Minneapolis,2005,196
+Minneapolis,2006,184.5
+Minneapolis,2007,185.7
+Minneapolis,2008,182.7
+Minneapolis,2009,169.9
+Minneapolis,2010,171.3
+Minneapolis,2011,173.1
+Minneapolis,2012,165.9
+Minneapolis,2013,169.7
+Minneapolis,2014,167.6
+New York,1980,626.82
+New York,1981,605.82
+New York,1982,597.94
+New York,1983,591.4
+New York,1984,591.38
+New York,1985,578.3
+New York,1986,562.56
+New York,1987,546.88
+New York,1988,546.22
+New York,1989,533.62
+New York,1990,517.78
+New York,1991,509.56
+New York,1992,506.86
+New York,1993,516.6800000000001
+New York,1994,493.28000000000003
+New York,1995,493.71999999999997
+New York,1996,474.84
+New York,1997,445.96
+New York,1998,429.36
+New York,1999,425.78
+New York,2000,404.68
+New York,2001,401.88
+New York,2002,389.22
+New York,2003,375.38
+New York,2004,357.94
+New York,2005,349.84
+New York,2006,341.24
+New York,2007,326.68
+New York,2008,322.2
+New York,2009,311.72
+New York,2010,287.58
+New York,2011,278.92
+New York,2012,271.3
+New York,2013,271.22
+New York,2014,267.8
+Oakland,1980,490
+Oakland,1981,481.1
+Oakland,1982,482.6
+Oakland,1983,451.7
+Oakland,1984,461.7
+Oakland,1985,450.6
+Oakland,1986,445.3
+Oakland,1987,435.1
+Oakland,1988,430.8
+Oakland,1989,431.3
+Oakland,1990,402.6
+Oakland,1991,395.3
+Oakland,1992,371.7
+Oakland,1993,368.4
+Oakland,1994,366.6
+Oakland,1995,362.2
+Oakland,1996,348.2
+Oakland,1997,334.5
+Oakland,1998,339.7
+Oakland,1999,340.3
+Oakland,2000,332.4
+Oakland,2001,312.2
+Oakland,2002,296.8
+Oakland,2003,293.6
+Oakland,2004,273.2
+Oakland,2005,259.6
+Oakland,2006,258
+Oakland,2007,249.7
+Oakland,2008,231
+Oakland,2009,218.3
+Oakland,2010,211.7
+Oakland,2011,211.3
+Oakland,2012,210.8
+Oakland,2013,204.4
+Oakland,2014,196.6
+Oklahoma City,1980,491.2
+Oklahoma City,1981,489.775
+Oklahoma City,1982,477.65
+Oklahoma City,1983,473.6
+Oklahoma City,1984,466.075
+Oklahoma City,1985,461.625
+Oklahoma City,1986,456.075
+Oklahoma City,1987,448.225
+Oklahoma City,1988,446.575
+Oklahoma City,1989,436.075
+Oklahoma City,1990,427.04999999999995
+Oklahoma City,1991,420.275
+Oklahoma City,1992,415.65
+Oklahoma City,1993,418.85
+Oklahoma City,1994,414
+Oklahoma City,1995,417.475
+Oklahoma City,1996,413.65
+Oklahoma City,1997,405.725
+Oklahoma City,1998,403.7
+Oklahoma City,1999,405.75
+Oklahoma City,2000,404.225
+Oklahoma City,2001,397.225
+Oklahoma City,2002,392.175
+Oklahoma City,2003,383.5
+Oklahoma City,2004,363.65
+Oklahoma City,2005,349.05
+Oklahoma City,2006,331.925
+Oklahoma City,2007,322.35
+Oklahoma City,2008,317.375
+Oklahoma City,2009,308.075
+Oklahoma City,2010,305.7
+Oklahoma City,2011,308.775
+Oklahoma City,2012,302.925
+Oklahoma City,2013,304.375
+Oklahoma City,2014,307.75
+Omaha,1980,496.3
+Omaha,1981,501.6
+Omaha,1982,482.3
+Omaha,1983,467.6
+Omaha,1984,477.2
+Omaha,1985,471
+Omaha,1986,437.5
+Omaha,1987,446.1
+Omaha,1988,426.2
+Omaha,1989,414.1
+Omaha,1990,395.3
+Omaha,1991,386.2
+Omaha,1992,381.3
+Omaha,1993,375.2
+Omaha,1994,361.7
+Omaha,1995,382.3
+Omaha,1996,359.7
+Omaha,1997,352.2
+Omaha,1998,343
+Omaha,1999,337.9
+Omaha,2000,326.2
+Omaha,2001,319.4
+Omaha,2002,308
+Omaha,2003,300.7
+Omaha,2004,283.9
+Omaha,2005,268.7
+Omaha,2006,261.3
+Omaha,2007,253.5
+Omaha,2008,242.1
+Omaha,2009,231
+Omaha,2010,235.9
+Omaha,2011,233.7
+Omaha,2012,229.8
+Omaha,2013,232.2
+Omaha,2014,228.1
+Philadelphia,1980,585.9
+Philadelphia,1981,558.7
+Philadelphia,1982,547.6
+Philadelphia,1983,535.8
+Philadelphia,1984,543.4
+Philadelphia,1985,533.3
+Philadelphia,1986,519.4
+Philadelphia,1987,516
+Philadelphia,1988,518.7
+Philadelphia,1989,513.5
+Philadelphia,1990,486.5
+Philadelphia,1991,486.9
+Philadelphia,1992,474.4
+Philadelphia,1993,484.2
+Philadelphia,1994,477.1
+Philadelphia,1995,476.7
+Philadelphia,1996,463.3
+Philadelphia,1997,448.6
+Philadelphia,1998,432.5
+Philadelphia,1999,429.2
+Philadelphia,2000,423.9
+Philadelphia,2001,417.3
+Philadelphia,2002,407.8
+Philadelphia,2003,402.8
+Philadelphia,2004,391.1
+Philadelphia,2005,377.3
+Philadelphia,2006,358.8
+Philadelphia,2007,355.1
+Philadelphia,2008,340.6
+Philadelphia,2009,338.3
+Philadelphia,2010,327.5
+Philadelphia,2011,336.9
+Philadelphia,2012,312.7
+Philadelphia,2013,312.9
+Philadelphia,2014,320.6
+Phoenix,1980,414.3
+Phoenix,1981,401.2
+Phoenix,1982,399.1
+Phoenix,1983,383.9
+Phoenix,1984,391.2
+Phoenix,1985,369.9
+Phoenix,1986,354.6
+Phoenix,1987,360
+Phoenix,1988,351.5
+Phoenix,1989,346.8
+Phoenix,1990,334.5
+Phoenix,1991,318.3
+Phoenix,1992,318.2
+Phoenix,1993,325
+Phoenix,1994,318.7
+Phoenix,1995,302.7
+Phoenix,1996,303.2
+Phoenix,1997,289.2
+Phoenix,1998,287.9
+Phoenix,1999,293.3
+Phoenix,2000,284.3
+Phoenix,2001,275.4
+Phoenix,2002,273.1
+Phoenix,2003,263.3
+Phoenix,2004,254.9
+Phoenix,2005,253.6
+Phoenix,2006,242.3
+Phoenix,2007,226.3
+Phoenix,2008,220.2
+Phoenix,2009,216.2
+Phoenix,2010,205.3
+Phoenix,2011,209.3
+Phoenix,2012,206.9
+Phoenix,2013,202.9
+Phoenix,2014,203.1
+Portland,1980,439.93333333333334
+Portland,1981,423.6333333333333
+Portland,1982,411.83333333333337
+Portland,1983,416.5
+Portland,1984,412.93333333333334
+Portland,1985,410
+Portland,1986,396.56666666666666
+Portland,1987,394.1333333333333
+Portland,1988,374.2
+Portland,1989,360.06666666666666
+Portland,1990,351.33333333333337
+Portland,1991,336.03333333333336
+Portland,1992,329.66666666666663
+Portland,1993,332.1666666666667
+Portland,1994,329.06666666666666
+Portland,1995,321.73333333333335
+Portland,1996,318.6333333333333
+Portland,1997,306.83333333333337
+Portland,1998,301.5333333333333
+Portland,1999,294.1
+Portland,2000,294.09999999999997
+Portland,2001,289.26666666666665
+Portland,2002,281.53333333333336
+Portland,2003,270.29999999999995
+Portland,2004,255.43333333333334
+Portland,2005,248.76666666666668
+Portland,2006,236.43333333333334
+Portland,2007,225.7
+Portland,2008,220.2
+Portland,2009,214.20000000000002
+Portland,2010,207.6
+Portland,2011,206.5
+Portland,2012,204.96666666666667
+Portland,2013,203.8
+Portland,2014,204.26666666666668
+Raleigh,1980,502.55
+Raleigh,1981,484.5
+Raleigh,1982,468.04999999999995
+Raleigh,1983,460.4
+Raleigh,1984,459.75
+Raleigh,1985,453.65
+Raleigh,1986,432.15
+Raleigh,1987,423.8
+Raleigh,1988,418.25
+Raleigh,1989,399.1
+Raleigh,1990,377.5
+Raleigh,1991,366.5
+Raleigh,1992,363.1
+Raleigh,1993,352.9
+Raleigh,1994,347.6
+Raleigh,1995,350.4
+Raleigh,1996,349.95
+Raleigh,1997,334.15
+Raleigh,1998,332.95000000000005
+Raleigh,1999,326.55
+Raleigh,2000,319.65
+Raleigh,2001,312.35
+Raleigh,2002,300.65
+Raleigh,2003,289.15
+Raleigh,2004,268.6
+Raleigh,2005,261
+Raleigh,2006,250.14999999999998
+Raleigh,2007,240.15
+Raleigh,2008,236.5
+Raleigh,2009,224.5
+Raleigh,2010,223.55
+Raleigh,2011,216.5
+Raleigh,2012,214.2
+Raleigh,2013,209.95
+Raleigh,2014,208.3
+Sacramento,1980,467.8
+Sacramento,1981,453.1
+Sacramento,1982,442.5
+Sacramento,1983,425.9
+Sacramento,1984,445.7
+Sacramento,1985,437.4
+Sacramento,1986,438.8
+Sacramento,1987,425.4
+Sacramento,1988,423.9
+Sacramento,1989,401.5
+Sacramento,1990,384
+Sacramento,1991,373.7
+Sacramento,1992,361.3
+Sacramento,1993,367
+Sacramento,1994,364.4
+Sacramento,1995,357.5
+Sacramento,1996,352.4
+Sacramento,1997,342
+Sacramento,1998,336.9
+Sacramento,1999,341
+Sacramento,2000,337.3
+Sacramento,2001,333.2
+Sacramento,2002,332.6
+Sacramento,2003,322.7
+Sacramento,2004,302.3
+Sacramento,2005,295.5
+Sacramento,2006,293.2
+Sacramento,2007,276.1
+Sacramento,2008,261
+Sacramento,2009,260.8
+Sacramento,2010,254.4
+Sacramento,2011,256
+Sacramento,2012,251.7
+Sacramento,2013,247.4
+Sacramento,2014,251.8
+San Antonio,1980,449.03333333333336
+San Antonio,1981,437.7
+San Antonio,1982,421.5333333333333
+San Antonio,1983,424.56666666666666
+San Antonio,1984,415.6
+San Antonio,1985,412.8333333333333
+San Antonio,1986,399.9666666666667
+San Antonio,1987,395
+San Antonio,1988,385.1
+San Antonio,1989,377.93333333333334
+San Antonio,1990,364.23333333333335
+San Antonio,1991,354.23333333333335
+San Antonio,1992,353.59999999999997
+San Antonio,1993,355.6
+San Antonio,1994,354.4
+San Antonio,1995,351.7
+San Antonio,1996,346.1
+San Antonio,1997,343.73333333333335
+San Antonio,1998,330
+San Antonio,1999,331.56666666666666
+San Antonio,2000,327.6
+San Antonio,2001,319.26666666666665
+San Antonio,2002,316.23333333333335
+San Antonio,2003,300.73333333333335
+San Antonio,2004,292.6333333333333
+San Antonio,2005,283.1666666666667
+San Antonio,2006,271.8
+San Antonio,2007,264.4666666666667
+San Antonio,2008,257.8
+San Antonio,2009,252.5
+San Antonio,2010,251.83333333333331
+San Antonio,2011,248.73333333333335
+San Antonio,2012,248.29999999999998
+San Antonio,2013,249.43333333333334
+San Antonio,2014,250.9
+San Diego,1980,420.1
+San Diego,1981,412
+San Diego,1982,402.5
+San Diego,1983,390.1
+San Diego,1984,395.1
+San Diego,1985,390
+San Diego,1986,382.1
+San Diego,1987,380.3
+San Diego,1988,367.8
+San Diego,1989,360.8
+San Diego,1990,350.6
+San Diego,1991,347.8
+San Diego,1992,345.3
+San Diego,1993,334.3
+San Diego,1994,339.1
+San Diego,1995,331.9
+San Diego,1996,322.6
+San Diego,1997,310.1
+San Diego,1998,307.9
+San Diego,1999,307.1
+San Diego,2000,305.6
+San Diego,2001,306.8
+San Diego,2002,285.8
+San Diego,2003,278.9
+San Diego,2004,267.9
+San Diego,2005,253.2
+San Diego,2006,243.6
+San Diego,2007,233.6
+San Diego,2008,228.5
+San Diego,2009,225.5
+San Diego,2010,215.9
+San Diego,2011,218.4
+San Diego,2012,209.6
+San Diego,2013,213.6
+San Diego,2014,206
+San Francisco,1980,472.2
+San Francisco,1981,454.7
+San Francisco,1982,460.7
+San Francisco,1983,433.4
+San Francisco,1984,447.2
+San Francisco,1985,441
+San Francisco,1986,415.2
+San Francisco,1987,411.4
+San Francisco,1988,421.6
+San Francisco,1989,415.2
+San Francisco,1990,399.2
+San Francisco,1991,397.2
+San Francisco,1992,380.8
+San Francisco,1993,373.2
+San Francisco,1994,365.6
+San Francisco,1995,360.2
+San Francisco,1996,351.3
+San Francisco,1997,323.8
+San Francisco,1998,319
+San Francisco,1999,313.2
+San Francisco,2000,294.1
+San Francisco,2001,287.7
+San Francisco,2002,278.3
+San Francisco,2003,260.6
+San Francisco,2004,244.2
+San Francisco,2005,235.6
+San Francisco,2006,230.8
+San Francisco,2007,217.2
+San Francisco,2008,206.4
+San Francisco,2009,205.7
+San Francisco,2010,196.7
+San Francisco,2011,189.9
+San Francisco,2012,192.8
+San Francisco,2013,184.7
+San Francisco,2014,179.8
+San Jose,1980,428.4
+San Jose,1981,430.3
+San Jose,1982,422.8
+San Jose,1983,405.6
+San Jose,1984,398.1
+San Jose,1985,387.3
+San Jose,1986,372.9
+San Jose,1987,380.7
+San Jose,1988,365.4
+San Jose,1989,351.5
+San Jose,1990,341
+San Jose,1991,333.7
+San Jose,1992,318.7
+San Jose,1993,322.1
+San Jose,1994,315.1
+San Jose,1995,310.3
+San Jose,1996,305.9
+San Jose,1997,301.9
+San Jose,1998,298.4
+San Jose,1999,289.4
+San Jose,2000,272.6
+San Jose,2001,267.6
+San Jose,2002,253
+San Jose,2003,233.7
+San Jose,2004,223.5
+San Jose,2005,211.8
+San Jose,2006,210.6
+San Jose,2007,193.2
+San Jose,2008,186.3
+San Jose,2009,181.1
+San Jose,2010,177.7
+San Jose,2011,171.3
+San Jose,2012,171.2
+San Jose,2013,168.8
+San Jose,2014,170.3
+Seattle,1980,405.8
+Seattle,1981,386.8
+Seattle,1982,391.5
+Seattle,1983,383.8
+Seattle,1984,378.1
+Seattle,1985,375.3
+Seattle,1986,355.1
+Seattle,1987,346.2
+Seattle,1988,340.4
+Seattle,1989,322.6
+Seattle,1990,319.1
+Seattle,1991,303.7
+Seattle,1992,302
+Seattle,1993,306.2
+Seattle,1994,286.2
+Seattle,1995,287.7
+Seattle,1996,293.3
+Seattle,1997,270.6
+Seattle,1998,267
+Seattle,1999,279.6
+Seattle,2000,274.1
+Seattle,2001,264.6
+Seattle,2002,255.9
+Seattle,2003,249.9
+Seattle,2004,237.4
+Seattle,2005,226.8
+Seattle,2006,221.9
+Seattle,2007,221.6
+Seattle,2008,214.8
+Seattle,2009,208.3
+Seattle,2010,204.7
+Seattle,2011,203.7
+Seattle,2012,195
+Seattle,2013,198.6
+Seattle,2014,197.5
+Tucson,1980,404.2
+Tucson,1981,387.4
+Tucson,1982,376.2
+Tucson,1983,369.2
+Tucson,1984,366.1
+Tucson,1985,364.2
+Tucson,1986,363.8
+Tucson,1987,370.4
+Tucson,1988,356
+Tucson,1989,339.4
+Tucson,1990,347.4
+Tucson,1991,337.9
+Tucson,1992,330
+Tucson,1993,335.2
+Tucson,1994,330.6
+Tucson,1995,327.1
+Tucson,1996,313.1
+Tucson,1997,304.9
+Tucson,1998,294.8
+Tucson,1999,294.5
+Tucson,2000,292.3
+Tucson,2001,284.1
+Tucson,2002,274.3
+Tucson,2003,262
+Tucson,2004,251.7
+Tucson,2005,243.3
+Tucson,2006,236.1
+Tucson,2007,229.5
+Tucson,2008,227.4
+Tucson,2009,229.1
+Tucson,2010,215.8
+Tucson,2011,226.1
+Tucson,2012,223.9
+Tucson,2013,217.2
+Tucson,2014,213.4
+Tulsa,1980,461.275
+Tulsa,1981,453.675
+Tulsa,1982,441.7
+Tulsa,1983,441.025
+Tulsa,1984,436.475
+Tulsa,1985,435.6
+Tulsa,1986,430.275
+Tulsa,1987,423.55
+Tulsa,1988,425.625
+Tulsa,1989,409.3
+Tulsa,1990,402.95
+Tulsa,1991,394.675
+Tulsa,1992,385.1
+Tulsa,1993,392.475
+Tulsa,1994,390.825
+Tulsa,1995,392.1
+Tulsa,1996,386.65
+Tulsa,1997,379.825
+Tulsa,1998,373.675
+Tulsa,1999,376.45
+Tulsa,2000,373.5
+Tulsa,2001,367.25
+Tulsa,2002,362.1
+Tulsa,2003,352.9
+Tulsa,2004,331.55
+Tulsa,2005,332.425
+Tulsa,2006,317.875
+Tulsa,2007,309.175
+Tulsa,2008,308.85
+Tulsa,2009,298.425
+Tulsa,2010,297.625
+Tulsa,2011,294.65
+Tulsa,2012,288.875
+Tulsa,2013,294.525
+Tulsa,2014,297.3
+Virginia Beach,1980,492.3
+Virginia Beach,1981,487.7
+Virginia Beach,1982,464.8
+Virginia Beach,1983,467.3
+Virginia Beach,1984,452.4
+Virginia Beach,1985,443.1
+Virginia Beach,1986,440
+Virginia Beach,1987,421.8
+Virginia Beach,1988,407.9
+Virginia Beach,1989,394.3
+Virginia Beach,1990,382.7
+Virginia Beach,1991,369.9
+Virginia Beach,1992,362.1
+Virginia Beach,1993,362.5
+Virginia Beach,1994,350.9
+Virginia Beach,1995,351.2
+Virginia Beach,1996,344.7
+Virginia Beach,1997,337.7
+Virginia Beach,1998,327.3
+Virginia Beach,1999,333.1
+Virginia Beach,2000,314.9
+Virginia Beach,2001,312.1
+Virginia Beach,2002,307.7
+Virginia Beach,2003,290.1
+Virginia Beach,2004,269.8
+Virginia Beach,2005,255.3
+Virginia Beach,2006,248.5
+Virginia Beach,2007,238.8
+Virginia Beach,2008,231.6
+Virginia Beach,2009,224.3
+Virginia Beach,2010,221.5
+Virginia Beach,2011,211.7
+Virginia Beach,2012,214.9
+Virginia Beach,2013,214.4
+Virginia Beach,2014,213
+Wichita,1980,438.4
+Wichita,1981,433.9
+Wichita,1982,418.2
+Wichita,1983,423.6
+Wichita,1984,426.9
+Wichita,1985,415
+Wichita,1986,414.8
+Wichita,1987,399.9
+Wichita,1988,392.3
+Wichita,1989,382.9
+Wichita,1990,372.7
+Wichita,1991,356.5
+Wichita,1992,351.7
+Wichita,1993,342.6
+Wichita,1994,350.6
+Wichita,1995,346.2
+Wichita,1996,338.6
+Wichita,1997,335.1
+Wichita,1998,335.2
+Wichita,1999,324.6
+Wichita,2000,325.2
+Wichita,2001,317.9
+Wichita,2002,323.1
+Wichita,2003,305.4
+Wichita,2004,291.3
+Wichita,2005,293.9
+Wichita,2006,275.9
+Wichita,2007,280.8
+Wichita,2008,263
+Wichita,2009,260
+Wichita,2010,257.1
+Wichita,2011,253.5
+Wichita,2012,254.1
+Wichita,2013,251.2
+Wichita,2014,257.9
