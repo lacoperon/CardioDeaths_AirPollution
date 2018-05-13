@@ -3,6 +3,9 @@
 # If you use my code, please attribute me (and star my repo!)
 # https://github.com/lacoperon/QAC311FinalProject
 
+# Note: The result of this code is found within `./data/acs_panel_data.csv`, 
+#       which is much faster than running this code on your local machine.
+
 library(readr)
 library(dplyr)
 
@@ -182,7 +185,14 @@ df12 <- get_acs_data_2010("./data/csv_pus2012/ss12pusa.csv")
 df13 <- get_acs_data_2010("./data/csv_pus2013/ss13pusa.csv")
 df14 <- get_acs_data_2010("./data/csv_pus2014/ss14pusa.csv")
 
-
+# This function reduces a given year's ACS dataframe into a dataframe of 
+# summary statistics for that year (as can be seen within the Project
+# Appendix, as well as the README)
+# Input:
+#     df - ACS dataframe of a given year, with associated city data,
+#          in PUMA format for the year 2000
+# Output:
+#     Dataframe containing relevant ACS metadata, by city, for a given year
 get_agg_data_2000 <- function(df) {
   df <- inner_join(df, pumaf, c("STPUMA"="BD")) %>%
     group_by(City.y) %>%
@@ -208,13 +218,19 @@ get_agg_data_2000 <- function(df) {
               inc_pov_ratio=mean(as.numeric(POVPIP), na.rm=T),
               avg_weight=mean(as.numeric(pwgtp1), na.rm=T) %>%
                 mutate(City=City.y) %>%
-                select(-City.y)
-              
-    )
+                select(-City.y))
   
   return(df)
 }
 
+# This function reduces a given year's ACS dataframe into a dataframe of 
+# summary statistics for that year (as can be seen within the Project
+# Appendix, as well as the README)
+# Input:
+#     df - ACS dataframe of a given year, with associated city data,
+#          in PUMA format for the year 2010
+# Output:
+#     Dataframe containing relevant ACS metadata, by city, for a given year
 get_agg_data_2010 <- function(df) {
   df <- inner_join(df, city_join, c("STPUMA"="STPUMA")) %>%
     group_by(`ASSOCIATED CITY`) %>%
@@ -246,28 +262,19 @@ get_agg_data_2010 <- function(df) {
   return(df)
 }
 
-city_join$`ASSOCIATED CITY`[! city_join$`ASSOCIATED CITY`  %in%  unique(df08$City)]
+# Gets Aggregate Data for Each Year in the Analysis, and tags it with the year
+df08_panel <- get_agg_data_2000(df08) %>% mutate(year = "2008")
+df09_panel <- get_agg_data_2000(df09) %>% mutate(year = "2009")
+df10_panel <- get_agg_data_2000(df10) %>% mutate(year = "2010")
+df11_panel <- get_agg_data_2000(df11) %>% mutate(year = "2011")
+df12_panel <- get_agg_data_2010(df12) %>% mutate(year = "2012")
+df13_panel <- get_agg_data_2010(df13) %>% mutate(year = "2013")
+df14_panel <- get_agg_data_2010(df14) %>% mutate(year = "2014")
 
-df08_test <- get_agg_data_2000(df08)
-df09_test <- get_agg_data_2000(df09)
-df10_test <- get_agg_data_2000(df10)
-df11_test <- get_agg_data_2000(df11)
-df12_test <- get_agg_data_2010(df12)
-df13_test <- get_agg_data_2010(df13)
-df14_test <- get_agg_data_2010(df14)
-
-df08_panel <- mutate(df08_test, year="2008")
-df09_panel <- mutate(df09_test, year="2009")
-df10_panel <- mutate(df10_test, year="2010")
-df11_panel <- mutate(df11_test, year="2011")
-df12_panel <- mutate(df12_test, year="2012")
-df13_panel <- mutate(df13_test, year="2013")
-df14_panel <- mutate(df14_test, year="2014")
-
+# Combines all of our data, so that we have data in bone fide panel format
 df_panel <- rbind(df08_panel, df09_panel, df10_panel,
                   df11_panel, df12_panel, df13_panel, df14_panel)
 
-rm(df08_test, df09_test, df10_test, df11_test, df12_test, df13_test, df14_test)
-rm(df08_panel, df09_panel, df10_panel, df11_panel, df12_panel, df13_panel, df14_panel)
-
-write_csv(df_panel, "./data/acs_panel_data")
+# Writes the resulting data to CSV, allowing for access without having to run 
+# all of this involved computation (which takes some time)
+write_csv(df_panel, "./data/acs_panel_data.csv")

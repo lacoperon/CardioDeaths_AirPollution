@@ -1,6 +1,6 @@
-install.packages("rvest")
 
-library("rvest")
+# -- Gets CDC Data ---
+library(rvest)
 
 # The following function scrapes the table at index j, as well as num_tables
 # following tables, from the specified URL.
@@ -14,7 +14,7 @@ library("rvest")
 #     other information formatted within the CDC table
 
 get_next_5_tables <- function(url, j=0, column_names, num_tables=5) {
-  for (i in 1:5) {
+  for (i in 1:num_tables) {
     table <- url %>%
       html() %>%
       html_nodes(xpath=paste0('//*[@id="table-', i+j, '"]')) %>%
@@ -34,5 +34,20 @@ get_next_5_tables <- function(url, j=0, column_names, num_tables=5) {
 }
 
 url <- "https://www.cdc.gov/mmwr/preview/mmwrhtml/ss6309a1.htm?s_cid=ss6309a1_e"
+
 column_names <- c("MMSA(s)", "Sample Size", "%", "SE", "95%")
-adults_good_better_health <- get_next_5_tables(url, j=1, column_names)
+adults_good_better_health <- get_next_5_tables(url, j=1, column_names) %>% select("MMSA(s)", "%")
+adults_doctor_12_months <- get_next_5_tables(url, j=21, column_names) %>% select("%")
+adults_cholesterol_checked <- get_next_5_tables(url, j=51, column_names)%>% select("%")
+adults_exercise_moderately <- get_next_5_tables(url, j=71, column_names)%>% select("%")
+adults_smoke <- get_next_5_tables(url, j=101, column_names) %>% select("%")
+adults_binge_drink <- get_next_5_tables(url, j=111, column_names) %>% select("%")
+
+df_combined <- cbind(adults_good_better_health, adults_doctor_12_months, 
+         adults_cholesterol_checked, adults_exercise_moderately,
+         adults_smoke, adults_binge_drink)
+
+colnames(df_combined) <- c("MetroArea", "GoodHealth", "SeenDoctor12mo",
+                           "CholestCheck", "Exercise", "Smoke", "BingeDrink")
+
+write_csv(df_combined, "./data/metro_cdc_data.csv")
