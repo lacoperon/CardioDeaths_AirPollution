@@ -92,17 +92,45 @@ grun.re <- plm(( CVDperCapita ~ income + racaian + racasn + racblk + racsor +
                    ret_income + avg_schl + age + is_insured + avg_weight + NO2 +
                    O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
                    BingeDrink ) , data = p_combined_data, model = "random", effect="individual")
-
+# Same thing when keeping data, removing pollution vals
 grun.fe2 <- plm(( CVDperCapita ~ income + racaian + racasn + racblk + racsor +
-                   racwht + selfcare_diff + is_medicare + is_va + public_assist_inc +
-                   ret_income + avg_schl + age + is_insured + avg_weight + NO2 +
-                   O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
-                   BingeDrink ) , data = p_combined_data2, model = "within", effect="individual")
+                    racwht + selfcare_diff + is_medicare + is_va + public_assist_inc +
+                    ret_income + avg_schl + age + is_insured + avg_weight + NO2 +
+                    O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
+                    BingeDrink ) , data = p_combined_data2, model = "within", effect="individual")
+
+
+# No significant squared relationship of SO2, there is w avg_weight, age, etc.
+grun.feb <- plm(( CVDperCapita ~ income + racaian + poly(racasn, 2, raw=T) + racblk + racsor +
+                   racwht +
+                   poly(is_va, 2, raw=T) +
+                   ret_income + avg_schl + poly(age, 2, raw=T) + is_insured  + NO2 +
+                   O3 + poly(SO2, 2, raw=T)+ poly(avg_weight, 2, raw=T) + 
+                   GoodHealth + SeenDoctor12mo + Exercise + Smoke +
+                   BingeDrink ) , data = p_combined_data, model = "within", effect="individual")
+
+grun.fec <- plm(( CVDperCapita ~ income + racaian + racasn + racblk + racsor +
+                    racwht + selfcare_diff + is_medicare + is_va + public_assist_inc +
+                    ret_income + avg_schl + poly(age, 2, raw=T) + is_insured + poly(avg_weight, 2, raw=T) + NO2 +
+                    O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
+                    BingeDrink ) , data = p_combined_data, model = "within", effect="individual")
+
+lsdv <- glm(CVDperCapita ~ income + racaian + racasn + racblk + racsor +
+      racwht + selfcare_diff + is_medicare + is_va + public_assist_inc +
+      ret_income + avg_schl + poly(age, 2, raw=T) + is_insured + poly(avg_weight, 2, raw=T) + NO2 +
+      O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
+      BingeDrink + City, data = combined_data)
+
+summary(lsdv) #LSDV shows that cities are important -- 
+#              also that more data would be helpful
+
 
 phtest(grun.fe, grun.re) # we should use fixed effects instead
 
 summary(grun.fe)
 summary(grun.fe2)
+summary(grun.feb)
+summary(grun.fec) # final model, shows a bunch of significant factors
 
 library(ggplot2)
 res <- data.frame(residuals(grun.fe))
