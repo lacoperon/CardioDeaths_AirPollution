@@ -77,14 +77,28 @@ grun.pool <- plm(( CVDperCapita ~ income + racaian + racasn + racblk + racsor +
                      BingeDrink ) , data = p_combined_data, model = "pooling")
 
 plmtest(grun.pool, effect="time", type="kw") #poolability test -- time doesn't matter
+# null hypothesis of zero variance in time-specific errors fails to be rejected
 plmtest(grun.pool, effect="individual", type="kw") #poolability test -- city does
+# null hypothesis of zero variance in time-specific errors is rejected
 plmtest(grun.pool, effect="twoway", type="ghm") # Two way is significant -- only bc of city
 
+# therefore, heterogeneity among individuals may be significant.
+
+# Random effects estimator are reliable under the assumption that individual characteristics 
+# (heterogeneity) are exogenous, that is, they are independent with respect to the
+# regressors in the random effects equation. The same Hausman test for endogeneity
+# we have already used in another chapter can be used here as well, with the null 
+# hypothesis that individual random effects are exogenous. 
+# The test function phtest() compares the fixed effects and the random 
+# effects models; the next code lines estimate the random effects model and 
+# performs the Hausman endogeneity test.
+#https://bookdown.org/ccolonescu/RPoE4/panel-data-models.html
+
 grun.fe <- plm(( CVDperCapita ~ income + racaian + racasn + racblk + racsor +
-                 racwht + selfcare_diff + is_medicare + is_va + public_assist_inc +
-                 ret_income + avg_schl + age + is_insured + avg_weight + NO2 +
-                 O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
-                 BingeDrink ) , data = p_combined_data, model = "within", effect="individual")
+                   racwht + selfcare_diff + is_medicare + is_va + public_assist_inc +
+                   ret_income + avg_schl + age + is_insured + avg_weight + NO2 +
+                   O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
+                   BingeDrink ) , data = p_combined_data, model = "within", effect="individual")
 
 grun.re <- plm(( CVDperCapita ~ income + racaian + racasn + racblk + racsor +
                    racwht +
