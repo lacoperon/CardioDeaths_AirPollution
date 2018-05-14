@@ -1,4 +1,7 @@
-# We should try to get more cities!!!
+# Authored by Elliot Williams
+# May 12th, 2018
+# If you use my code, please attribute me (and star my repo!)
+# https://github.com/lacoperon/QAC311FinalProject
 
 library(readr)
 library(dplyr)
@@ -47,20 +50,21 @@ library(corrplot)
 ## corrplot 0.84 loaded
 corrplot(cor_matrix, method = "square")
 
-cor_matrix > 0.7
+abs(cor_matrix) > 0.7 # Recheck this
 
 cd_f <- select(combined_data, -ind_liv_diff, -amb_diff, -disabled, 
                   -ss_income, -CholestCheck, -CO, -is_married,
-                  -inc_pov_ratio)
+                  -inc_pov_ratio, -is_medicare)
 
 cd_f2 <- select(combined_data2, -ind_liv_diff, -amb_diff, -disabled, 
                -ss_income, -CholestCheck, -is_married,
-               -inc_pov_ratio)
+               -inc_pov_ratio, is_medicare)
 
 
 cd_filt <- select(cd_f, -City, -year)
 
 cor_matrix2 <- cor(cd_filt, use = "complete.obs")
+abs(cor_matrix2) > 0.7
 library(corrplot)
 ## corrplot 0.84 loaded
 corrplot(cor_matrix2, method = "square")
@@ -72,7 +76,7 @@ p_combined_data <- pdata.frame(cd_f, index=c("City", "year"))
 p_combined_data2 <- pdata.frame(cd_f2, index=c("City", "year"))
 
 grun.pool <- plm(( CVDperCapita ~ income + racaian + racasn + racblk + racsor +
-                     racwht + selfcare_diff + is_medicare + is_va + public_assist_inc +
+                     racwht + selfcare_diff + is_va + public_assist_inc +
                      ret_income + avg_schl + age + is_insured + avg_weight + NO2 +
                      O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
                      BingeDrink ) , data = p_combined_data, model = "pooling")
@@ -96,7 +100,7 @@ plmtest(grun.pool, effect="twoway", type="ghm") # Two way is significant -- only
 #https://bookdown.org/ccolonescu/RPoE4/panel-data-models.html
 
 grun.fe <- plm(( CVDperCapita ~ income + racaian + racasn + racblk + racsor +
-                   racwht + selfcare_diff + is_medicare + is_va + public_assist_inc +
+                   racwht + selfcare_diff + is_va + public_assist_inc +
                    ret_income + avg_schl + age + is_insured + avg_weight + NO2 +
                    O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
                    BingeDrink + Asthma) , data = p_combined_data, model = "within", effect="individual")
@@ -107,11 +111,17 @@ grun.re <- plm(( CVDperCapita ~ income + racaian + racasn + racblk + racsor +
                    ret_income + avg_schl + age + is_insured + avg_weight + NO2 +
                    O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
                    BingeDrink) , data = p_combined_data, model = "random", effect="individual")
+
+phtest(grun.fe, grun.re) # we could use random effects, 
+                         # but we will instead use fixed effects
+                         # because getting 'singular matrix' error ==> too little data'
+                         # (Both are appropriate under null hyp, so this is fine)
+
 # Same thing when keeping data, removing pollution vals
 grun.fe2 <- plm(( CVDperCapita ~ income + racaian + racasn + racblk + racsor +
-                    racwht + selfcare_diff + is_medicare + is_va + public_assist_inc +
-                    ret_income + avg_schl + age + is_insured + avg_weight + NO2 +
-                    O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
+                    racwht + selfcare_diff + is_va + public_assist_inc +
+                    ret_income + avg_schl + age + is_insured + avg_weight  +
+                    GoodHealth + SeenDoctor12mo + Exercise + Smoke +
                     BingeDrink + Asthma ) , data = p_combined_data2, model = "within", effect="individual")
 
 
@@ -124,41 +134,53 @@ grun.feb <- plm(( CVDperCapita ~ income + racaian + poly(racasn, 2, raw=T) + rac
                    GoodHealth + SeenDoctor12mo + Exercise + Smoke +
                    BingeDrink ) , data = p_combined_data, model = "within", effect="individual")
 
+grun.feb2 <- plm(( CVDperCapita ~ income + racaian + poly(racasn, 2, raw=T) + racblk + racsor +
+                    racwht + Asthma + Asthma * age +
+                    poly(is_va, 2, raw=T) +
+                    ret_income + avg_schl + poly(age, 2, raw=T) + is_insured  + NO2 +
+                    O3 + poly(SO2, 2, raw=T)+ poly(avg_weight, 2, raw=T) + 
+                    GoodHealth + SeenDoctor12mo + Exercise + Smoke +
+                    BingeDrink ) , data = p_combined_data, model = "within", effect="individual")
+# no interaction bw asthma, age
+grun.feb3 <- plm(( CVDperCapita ~ income + racaian + poly(racasn, 2, raw=T) + racblk + racsor +
+                     racwht + Asthma + Asthma * SO2 +
+                     poly(is_va, 2, raw=T) +
+                     ret_income + avg_schl + poly(age, 2, raw=T) + is_insured  + NO2 +
+                     O3 + poly(SO2, 2, raw=T)+ poly(avg_weight, 2, raw=T) + 
+                     GoodHealth + SeenDoctor12mo + Exercise + Smoke +
+                     BingeDrink ) , data = p_combined_data, model = "within", effect="individual")
+# nor asthma, SO2
+
+# This is our final model, then
 grun.fec <- plm(( CVDperCapita ~ income + racaian + racasn + racblk + racsor +
-                    racwht + selfcare_diff + is_medicare + is_va + public_assist_inc +
+                    racwht + selfcare_diff + is_va + public_assist_inc +
                     ret_income + avg_schl + poly(age, 2, raw=T) + is_insured + poly(avg_weight, 2, raw=T) + NO2 +
                     O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
                     BingeDrink + Asthma ) , data = p_combined_data, model = "within", effect="individual")
 
 lsdv <- glm(CVDperCapita ~ income + racaian + racasn + racblk + racsor +
-      racwht + selfcare_diff + is_medicare + is_va + public_assist_inc +
+      racwht + selfcare_diff + is_va + public_assist_inc +
       ret_income + avg_schl + poly(age, 2, raw=T) + is_insured + poly(avg_weight, 2, raw=T) + NO2 +
       O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
       BingeDrink + Asthma + City, data = combined_data)
 
 summary(lsdv) #LSDV shows that cities are important -- 
 #              also that more data would be helpful
-
-
-phtest(grun.fe, grun.re) # we should use fixed effects instead
-
-summary(grun.fe)
-summary(grun.fe2)
-summary(grun.feb)
 summary(grun.fec) # final model, shows a bunch of significant factors
-# 68% adjusted R-squared -- that's awesome!
+# 66.2% adjusted R-squared -- that's awesome!
 
 library(ggplot2)
 res <- data.frame(residuals(grun.fe))
 colnames(res) <- "Res"
-ggplot(res, aes(Res)) + geom_density(adjust=0.4, color="darkblue", fill="darkblue", alpha=0.3) + xlim(-20,20) +
+ggplot(res, aes(Res)) + 
+  geom_density(adjust=0.4, color="hotpink", fill="hotpink", alpha=0.3) + 
+  xlim(-20,20) +
   labs(title="Residual Density Plot of Fixed Effects Model", 
        subtitle="One way wrt Panel Unit (not Time)", 
        x = "Residual Value", y="Frequency")
 
-# maybe should do residual plot over time -- but perhaps not worthwhile, bc
-# it wasn't statistically significant in the first place
-
+# not worthwile doing a plot against time -- test showed that it wasn't
+# a significant factor
 
 
 # https://www.stata.com/statalist/archive/2003-09/msg00595.html
@@ -189,8 +211,6 @@ ggplot(res, aes(Res)) + geom_density(adjust=0.4, color="darkblue", fill="darkblu
 
 #https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3854161/
 #https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3392899/
-
-# Also, perhaps add a lag term for the pollutants too
 
 xs <- seq(18, 100, 1)
 ys <- 1.0316e+00 * xs^2 - 7.8739e+01 * xs
@@ -231,9 +251,84 @@ x2 <- mean(sapply(combined_data$SO2, function(x) { min(x, 1.5)}), na.rm=T)
 x1 - x2
 # Back of envelope calculations
 # 400 PUMA regions, 100K ppl each approx, w coeff of 5.2328 for SO2
-400 * 5.2328 * (x1-x2)
+400 * 5.7699 * (x1-x2)
 
 combined_data %>% filter(SO2 > 1.5) %>% group_by(City) %>% summarize(n=n()) %>%
   arrange(desc(n))
 
-# WE SHOULD ADD ASTHMA AS A FACTOR
+# SO2 is emitted from heating oils -- NYC has enacted laws that would phase out
+# the heating oils in question
+
+# https://www.healthypeople.gov/2020/healthy-people-in-action/story/new-york-city-air-quality-programs-reduce-harmful-air-pollutants
+
+comb_data_freq <- select(combined_data, SO2, NO2, CO, O3, year, City)
+
+# -- Let's see when data on the various NAAQS Pollutants is available, by City
+# SO2
+SO2_avail <- data.frame(unique(combined_data$City))
+for (year in 2008:2014) {
+  x <- sapply(unique(combined_data$City), 
+         function(x) { 
+           is.na((comb_data_freq %>% filter(year==year, City==x))$SO2[year-2007]) 
+           })
+  print(length(x))
+  SO2_avail <- cbind(SO2_avail, x)
+}
+colnames(SO2_avail) <- c("City", 2008:2014)
+SO2_avail_year <- colSums(SO2_avail[,-1])
+
+# NO2
+NO2_avail <- data.frame(unique(combined_data$City))
+for (year in 2008:2015) {
+  x <- sapply(unique(combined_data$City), 
+              function(x) { 
+                is.na((comb_data_freq %>% filter(year==year, City==x))$NO2[year-2008]) 
+              })
+  print(length(x))
+  NO2_avail <- cbind(NO2_avail, x)
+}
+colnames(NO2_avail) <- c("City", 2008:2015)
+NO2_avail_year <- colSums(NO2_avail[,-1])
+
+# CO
+CO_avail <- data.frame(unique(combined_data$City))
+for (year in 2008:2015) {
+  x <- sapply(unique(combined_data$City), 
+              function(x) { 
+                is.na((comb_data_freq %>% filter(year==year, City==x))$CO[year-2008]) 
+              })
+  print(length(x))
+  CO_avail <- cbind(CO_avail, x)
+}
+colnames(CO_avail) <- c("City", 2008:2015)
+CO_avail_year <- colSums(CO_avail[,-1])
+
+# O3
+O3_avail <- data.frame(unique(combined_data$City))
+for (year in 2008:2015) {
+  x <- sapply(unique(combined_data$City), 
+              function(x) { 
+                is.na((comb_data_freq %>% filter(year==year, City==x))$O3[year-2008]) 
+              })
+  print(length(x))
+  O3_avail <- cbind(O3_avail, x)
+}
+O3_avail_year <- colSums(O3_avail[,-1])
+
+# Now, let's visualize the number of observations of pollutants over year
+naaqs_values <- comb_data_freq %>%
+  group_by(year) %>%
+  summarize(obs_SO2=sum(! is.na(SO2)),
+            obs_NO2=sum(! is.na(NO2)),
+            obs_CO=sum(! is.na(CO)),
+            obs_O3=sum(! is.na(O3)))
+
+
+# They all have the same number of values, so let's graph that over year
+ggplot(naaqs_values, aes(x=year, y=obs_SO2)) + 
+  geom_bar(stat="identity", fill="blue", color="black") +
+  labs(title="NAAQS Pollutant Observations", 
+       subtitle="Observations available in cities by year",
+       x = "Year", y="Number of Observations") +
+  scale_x_discrete("Year", breaks=2008:2014, limits=2008:2014, expand=c(0.05,0))
+

@@ -1,5 +1,20 @@
+# Authored by Elliot Williams
+# May 12th, 2018
+# If you use my code, please attribute me (and star my repo!)
+# https://github.com/lacoperon/QAC311FinalProject
+
+# Note: The result of this code is found within `./data/acs_panel_data.csv`, 
+#       which is much faster than running this code on your local machine.
+
 library(readr)
 library(jsonlite)
+
+# Gets Cardiovascular Death Data from FiveThirtyEight website
+# See projects.fivethirtyeight.com/mortality-rates-united-states/cardiovascular2
+# (Derived from looking at the packets exchanged between their web servers and
+#  my laptop -- just a more convenient version of the
+#  Institute for Health Metrics and Evaluation dataset, which itself was
+#  very inconveniently arranged in multiple Excel files)
 
 L <- fromJSON("cardiovascular2.json")
 n <- length(L[[1]])
