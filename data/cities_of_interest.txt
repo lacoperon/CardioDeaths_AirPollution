@@ -1,0 +1,28 @@
+New York, New York
+Los Angeles, CA
+Houston, TX
+Philadelphia, PA
+Phoenix, AZ
+San Antonio, TX
+San Diego, California
+Dallas, Texas
+San Jose, California
+Austin, Texas
+Indianapolis, Indiana
+San Francisco, California
+Charlotte, North Carolina
+Seattle, Washington
+Denver, Colorado
+Washington, D.C.
+Boston, Massachusetts
+Oklahoma City, Oklahoma
+Louisville, Kentucky
+Portland, Oregon
+Albuquerque, New Mexico
+Tucson, Arizona
+Long Beach, California
+Kansas City, Missouri
+Raleigh, North Carolina
+Oakland, California
+Tulsa, Oklahoma
+Cleveland, Ohio
