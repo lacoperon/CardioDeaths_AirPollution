@@ -63,7 +63,7 @@ cd_f2 <- select(combined_data2, -ind_liv_diff, -amb_diff, -disabled,
 
 cd_filt <- select(cd_f, -City, -year)
 
-cor_matrix2 <- cor(cd_filt, use = "complete.obs")
+cor_matrix2 <- cor(cd_f, use = "complete.obs")
 abs(cor_matrix2) > 0.7
 library(corrplot)
 ## corrplot 0.84 loaded
@@ -107,7 +107,7 @@ grun.fe <- plm(( CVDperCapita ~ income + racaian + racasn + racblk + racsor +
 
 grun.re <- plm(( CVDperCapita ~ income + racaian + racasn + racblk + racsor +
                    racwht +
-                   is_va +
+                   is_va + racwht + public_assist_inc +
                    ret_income + avg_schl + age + is_insured + avg_weight + NO2 +
                    O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
                    BingeDrink) , data = p_combined_data, model = "random", effect="individual")
@@ -159,10 +159,10 @@ grun.fec <- plm(( CVDperCapita ~ income + racaian + racasn + racblk + racsor +
                     BingeDrink + Asthma ) , data = p_combined_data, model = "within", effect="individual")
 
 lsdv <- glm(CVDperCapita ~ income + racaian + racasn + racblk + racsor +
-      racwht + selfcare_diff + is_va + public_assist_inc +
-      ret_income + avg_schl + poly(age, 2, raw=T) + is_insured + poly(avg_weight, 2, raw=T) + NO2 +
-      O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
-      BingeDrink + Asthma + City, data = combined_data)
+              racwht + selfcare_diff + is_va + public_assist_inc +
+              ret_income + avg_schl + poly(age, 2, raw=T) + is_insured + poly(avg_weight, 2, raw=T) + NO2 +
+              O3 + SO2 + GoodHealth + SeenDoctor12mo + Exercise + Smoke +
+              BingeDrink + Asthma + City, data = combined_data)
 
 summary(lsdv) #LSDV shows that cities are important -- 
 #              also that more data would be helpful
@@ -330,5 +330,9 @@ ggplot(naaqs_values, aes(x=year, y=obs_SO2)) +
   labs(title="NAAQS Pollutant Observations", 
        subtitle="Observations available in cities by year",
        x = "Year", y="Number of Observations") +
-  scale_x_discrete("Year", breaks=2008:2014, limits=2008:2014, expand=c(0.05,0))
+  scale_x_discrete("Year", breaks=2008:2014, limits=2008:2014, expand=c(0.05,0)) + 
+                     theme(text = element_text(size=20))
+
+write_csv(combined_data, "data/complete_panel_data.csv")
+
 
